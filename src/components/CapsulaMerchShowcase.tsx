@@ -71,7 +71,9 @@ export const CapsulaMerchShowcase: React.FC = () => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className={item.id === 'tshirt-vintage'
+                    ? 'w-full h-full object-contain'
+                    : 'w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'}
                 />
                 <div className="absolute top-2 left-2">
                   <span className="px-2.5 py-1 rounded-full bg-[#008B3E] text-white text-[10px] font-black uppercase tracking-wider shadow-xs">

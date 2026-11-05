@@ -96,12 +96,12 @@ export const ROSARIO_DISPENSER_SPOTS: DispenserSpot[] = [
 export const CAPSULA_MERCH_ITEMS: CapsulaMerchItem[] = [
   {
     id: 'tshirt-vintage',
-    name: 'Remera Boxy Oversize 7UP',
+    name: 'Remera Boxy Cherry 7UP',
     category: 'Ropa',
     tagline: '100% Algodón Pesado 24/1 • Edición Cápsula Limitada',
     description:
       'Corte relajado de hombros caídos con serigrafía al agua en pecho y espalda. Incluye etiqueta conmemorativa de la cápsula 7UP.',
-    image: '/reme 1.png',
+    image: '/remera-boxy-cherry-7up.png',
     badge: 'MÁS BUSCADA',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     rarity: 'Edición Especial',
