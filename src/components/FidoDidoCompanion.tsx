@@ -111,6 +111,10 @@ export const FidoDidoCompanion: React.FC<FidoDidoCompanionProps> = ({ onNavigate
               </div>
             </div>
 
+            <p className="mt-3 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-xs leading-relaxed text-[#05421A]">
+              Hay un capítulo bloqueado al final de Historia. Descubrilo: la historia sigue fuera de acá.
+            </p>
+
             {/* Quick Actions Shortcuts */}
             <div className="mt-3 pt-3 border-t border-emerald-100 flex items-center gap-2">
               <button
