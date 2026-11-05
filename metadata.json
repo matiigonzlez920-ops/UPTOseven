@@ -1,0 +1,8 @@
+{
+  "name": "7UP — Siente el Frescor",
+  "description": "Experiencia interactiva 7UP — THE STORY con 3D scrollytelling en Three.js, GSAP ScrollTrigger y React a través de 7 capítulos históricos, visor 3D 360° y catálogo sensorial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
