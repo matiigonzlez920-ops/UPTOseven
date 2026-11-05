@@ -8,7 +8,7 @@ export const CapsulaMerchShowcase: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('Todos');
   const [selectedItem, setSelectedItem] = useState<CapsulaMerchItem>(CAPSULA_MERCH_ITEMS[0]);
 
-  const categories = ['Todos', 'Ropa', 'Accesorios', 'Colección'];
+  const categories = ['Todos', 'Ropa', 'Accesorios'];
 
   const filteredItems =
     activeCategory === 'Todos'
@@ -71,7 +71,7 @@ export const CapsulaMerchShowcase: React.FC = () => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className={item.id === 'tshirt-vintage'
+                  className={item.id === 'tshirt-cherry'
                     ? 'w-full h-full object-contain'
                     : 'w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'}
                 />

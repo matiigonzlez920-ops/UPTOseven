@@ -1,7 +1,7 @@
 export interface CapsulaMerchItem {
   id: string;
   name: string;
-  category: 'Ropa' | 'Accesorios' | 'Colección';
+  category: 'Ropa' | 'Accesorios';
   tagline: string;
   description: string;
   image: string;
@@ -96,6 +96,18 @@ export const ROSARIO_DISPENSER_SPOTS: DispenserSpot[] = [
 export const CAPSULA_MERCH_ITEMS: CapsulaMerchItem[] = [
   {
     id: 'tshirt-vintage',
+    name: 'Remera Boxy Oversize 7UP',
+    category: 'Ropa',
+    tagline: '100% Algodón Pesado 24/1 • Edición Cápsula Limitada',
+    description:
+      'Corte relajado de hombros caídos con serigrafía al agua en pecho y espalda. Incluye etiqueta conmemorativa de la cápsula 7UP.',
+    image: '/reme 1.png',
+    badge: 'MÁS BUSCADA',
+    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+    rarity: 'Edición Especial',
+  },
+  {
+    id: 'tshirt-cherry',
     name: 'Remera Boxy Cherry 7UP',
     category: 'Ropa',
     tagline: '100% Algodón Pesado 24/1 • Edición Cápsula Limitada',
@@ -128,18 +140,6 @@ export const CAPSULA_MERCH_ITEMS: CapsulaMerchItem[] = [
     image: '/gorra.png',
     badge: 'DROP LIMITADO',
     sizes: ['Talle Único Regulable'],
-    rarity: 'Rara',
-  },
-  {
-    id: 'tumbler-steel',
-    name: 'Vaso Térmico Efervescente 500ml',
-    category: 'Colección',
-    tagline: 'Doble pared de acero quirúrgico 304 con aislación al vacío',
-    description:
-      'Mantiene tu 7UP con hielo durante 18 horas sin transpirar el exterior. Tapa hermética con boquilla ergonómica y pintura electrostática verde mate.',
-    image: 'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80',
-    badge: 'ACERO 304',
-    sizes: ['500 ml'],
     rarity: 'Rara',
   },
 ];
