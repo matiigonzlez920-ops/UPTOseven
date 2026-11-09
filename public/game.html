@@ -87,7 +87,18 @@ canvas{display:block;width:100%;height:100%;touch-action:none;image-rendering:pi
 .touch button{pointer-events:auto;width:62px;height:62px;border-radius:50%;border:3px solid #000;background:rgba(232,224,200,.7);font-size:24px;font-weight:700;color:#000;touch-action:none;user-select:none;-webkit-user-select:none}
 @media (pointer:coarse){ .touch{display:flex} }
 #spriteNote{font-size:13px;color:#9FE08A;min-height:1em}
-</style>
+/* Match the surrounding site without altering the game canvas or its mechanics. */
+:root:not([data-theme="dark"]){--bg:#F1F6D5;--text:#01592A;--soft:#01592A;--yellow:#01592A;--cream:#FFFFFF;color-scheme:light}
+:root:not([data-theme="dark"]) #frame{box-shadow:0 0 0 4px #FFFFFF,0 0 0 6px #01592A33}
+:root:not([data-theme="dark"]) .overlay{background:rgba(241,246,213,.62)}
+:root:not([data-theme="dark"]) .card{background:#FFFFFF;color:#01592A;border-color:#A4D902;box-shadow:0 0 0 3px #01592A,8px 8px 0 3px #01592A22}
+:root:not([data-theme="dark"]) .ch{background:#F1F6D5;color:#01592A;border-color:#01592A33;box-shadow:3px 3px 0 #01592A22}
+:root:not([data-theme="dark"]) .ch[aria-pressed="true"],:root:not([data-theme="dark"]) .ch:hover{background:#e3edbd;outline-color:#01592A}
+:root:not([data-theme="dark"]) .btn.alt{background:#FFFFFF;color:#01592A;border-color:#01592A;box-shadow:inset -2px -2px 0 #F1F6D5}
+:root:not([data-theme="dark"]) #spriteNote,:root:not([data-theme="dark"]) .hint{color:#01592A}
+</style><script>
+(function(){function sync(){try{document.documentElement.dataset.theme=window.parent!==window&&window.parent.document.documentElement.classList.contains('dark')?'dark':'light'}catch(e){document.documentElement.dataset.theme='light'}}sync();try{if(window.parent!==window)new MutationObserver(sync).observe(window.parent.document.documentElement,{attributes:true,attributeFilter:['class']})}catch(e){}})();
+</script>
 </head>
 <body>
 <header>

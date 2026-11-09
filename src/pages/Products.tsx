@@ -68,7 +68,7 @@ export const Products: React.FC<ProductsProps> = ({ onNavigate }) => {
           {/* Full-width Banner Hero Cápsula */}
           <section
             id="capsula-hero"
-            className="w-full relative overflow-hidden bg-linear-to-r from-[#01592A] via-[#01592A] to-[#01592A] text-white py-12 sm:py-16 lg:py-20 shadow-xl border-b-4 border-[#A4D902]"
+            className="w-full relative overflow-hidden bg-linear-to-r from-white dark:from-[#01592A] via-white dark:via-[#01592A] to-[#F1F6D5] dark:to-[#01592A] text-[#01592A] dark:text-white py-12 sm:py-16 lg:py-20 shadow-xl border-b-4 border-[#A4D902]"
           >
             {/* Ambient decorative glow and patterns */}
             <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#A4D902]/10 rounded-full blur-3xl pointer-events-none" />
@@ -79,16 +79,16 @@ export const Products: React.FC<ProductsProps> = ({ onNavigate }) => {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 {/* Columna Izquierda: Título y Bajada */}
                 <div className="lg:col-span-6 flex flex-col text-left">
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.05] drop-shadow-md">
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#01592A] dark:text-white tracking-tight uppercase leading-[1.05] drop-shadow-md">
                     DISPENSER 7UP: <br />
-                    <span className="text-[#A4D902]">CÁPSULA EXCLUSIVA</span>
+                    <span className="text-[#01592A] dark:text-[#A4D902]">CÁPSULA EXCLUSIVA</span>
                   </h1>
 
-                  <p className="text-lg sm:text-xl text-emerald-100 font-medium mt-5 leading-relaxed max-w-2xl">
+                  <p className="text-lg sm:text-xl text-[#01592A]/80 dark:text-emerald-100 font-medium mt-5 leading-relaxed max-w-2xl">
                     Encontrá las máquinas expendedoras de 7UP con indumentaria y prendas exclusivas listas para retirar en las calles de Rosario.
                   </p>
 
-                  <p className="text-sm sm:text-base text-emerald-200/80 mt-3 font-normal leading-relaxed max-w-xl">
+                  <p className="text-sm sm:text-base text-[#01592A]/80 dark:text-emerald-200/80 mt-3 font-normal leading-relaxed max-w-xl">
                     Espacio reservado para descripción adicional o bajada complementaria de la campaña.
                   </p>
                 </div>

@@ -484,26 +484,26 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
           2. JUEGO ARCADE EN VIVO (UP TO SEVEN: NIVEL 1)
           =================================================== */}
       <section id="arcade-game-section" className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-4">
-        <div className="relative rounded-[32px] sm:rounded-[40px] bg-[#071F11] border-4 border-[#0F6B3A] dark:border-[#029F3D]/40 p-2.5 sm:p-5 shadow-2xl overflow-hidden">
+        <div className="relative rounded-[32px] sm:rounded-[40px] bg-white dark:bg-[#071F11] border-4 border-[#0F6B3A] dark:border-[#029F3D]/40 p-2.5 sm:p-5 shadow-2xl overflow-hidden">
           {/* Header Bar */}
           <div className="flex flex-wrap items-center justify-between gap-4 pb-3 px-2 border-b border-emerald-800/60">
             <div className="flex items-center gap-3">
               <div className="w-3.5 h-3.5 rounded-full bg-[#F2081B] animate-pulse" />
               <div className="w-3.5 h-3.5 rounded-full bg-[#A4D902]" />
               <div className="w-3.5 h-3.5 rounded-full bg-[#029F3D]" />
-              <span className="font-['Press_Start_2P',monospace] text-xs sm:text-sm text-[#A4D902] tracking-wider ml-2">
+              <span className="font-['Press_Start_2P',monospace] text-xs sm:text-sm text-[#01592A] dark:text-[#A4D902] tracking-wider ml-2">
                 UP TO SEVEN • ARCADE 90s
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-xs font-mono text-[#F1F6D5] hidden sm:inline">
+              <span className="text-xs font-mono text-[#01592A]/80 dark:text-[#F1F6D5] hidden sm:inline">
                 🎮 Controles: Flechas / A-D • Espacio / W para saltar • S para subte
               </span>
             </div>
           </div>
 
           {/* Game iFrame Container (Much larger, full viewport height presence) */}
-          <div className="relative w-full h-[80vh] min-h-[620px] sm:min-h-[760px] lg:min-h-[860px] rounded-2xl overflow-hidden mt-3 bg-black shadow-inner border-2 border-black">
+          <div className="relative w-full h-[80vh] min-h-[620px] sm:min-h-[760px] lg:min-h-[860px] rounded-2xl overflow-hidden mt-3 bg-white dark:bg-black shadow-inner border-2 border-black">
             <iframe
               src="/game.html"
               title="Up to Seven: nivel 1, Buenos Aires"
@@ -513,15 +513,15 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
           </div>
 
           {/* Quick instructions bar */}
-          <div className="mt-4 pt-3 flex flex-wrap items-center justify-between gap-3 text-xs text-[#F1F6D5] font-mono px-2">
+          <div className="mt-4 pt-3 flex flex-wrap items-center justify-between gap-3 text-xs text-[#01592A]/80 dark:text-[#F1F6D5] font-mono px-2">
             <div className="flex flex-wrap items-center gap-2">
-              <span className="px-2.5 py-1 rounded-md bg-[#0F6B3A]/60 text-white font-bold border border-emerald-600/40">
+              <span className="px-2.5 py-1 rounded-md bg-white dark:bg-[#0F6B3A]/60 text-[#01592A] dark:text-white font-bold border border-emerald-600/40">
                 Limas &amp; Tapitas
               </span>
               <span>¡Juntá las 7 tapitas y llegá al kiosco para canjear tu Seven Up helada!</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-[#A4D902] font-bold">Demo jugable en navegador • El juego completo en maquinitas</span>
+              <span className="text-[#01592A] dark:text-[#A4D902] font-bold">Demo jugable en navegador • El juego completo en maquinitas</span>
             </div>
           </div>
         </div>
@@ -536,7 +536,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
         id="descargar-seccion"
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24"
       >
-        <div className="relative rounded-[36px] bg-linear-to-br from-[#042B12] via-[#02200D] to-[#011408] border-2 border-emerald-500/30 p-6 sm:p-12 lg:p-14 text-white shadow-2xl overflow-hidden">
+        <div className="relative rounded-[36px] bg-linear-to-br from-white dark:from-[#042B12] via-white dark:via-[#02200D] to-[#F1F6D5] dark:to-[#011408] border-2 border-emerald-500/30 p-6 sm:p-12 lg:p-14 text-[#01592A] dark:text-white shadow-2xl overflow-hidden">
           {/* Ambient Glows */}
           <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#A4D902]/15 blur-3xl pointer-events-none" />
           <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-[#F2081B]/15 blur-3xl pointer-events-none" />
@@ -544,16 +544,16 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
           {/* Section Main Header */}
           <div className="relative z-10 mb-8 sm:mb-12">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F2081B] text-white font-black text-xs uppercase tracking-wider shadow-md mb-4">
-              <Gamepad2 className="w-4 h-4 text-white animate-pulse" />
+              <Gamepad2 className="w-4 h-4 text-[#01592A] dark:text-white animate-pulse" />
               <span>GABINETES ARCADE FÍSICOS • EXPERIENCIA 90s EXCLUSIVA</span>
             </div>
 
-            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-5xl font-black text-[#01592A] dark:text-white tracking-tight leading-tight">
               ¿QUERÉS JUGAR EL JUEGO ENTERO? <br />
-              <span className="text-[#A4D902]">BUSCÁ LAS MAQUINITAS ARCADE DE 7UP</span>
+              <span className="text-[#01592A] dark:text-[#A4D902]">BUSCÁ LAS MAQUINITAS ARCADE DE 7UP</span>
             </h2>
 
-            <p className="text-sm sm:text-base text-emerald-100/80 mt-3 max-w-3xl leading-relaxed">
+            <p className="text-sm sm:text-base text-[#01592A]/80 dark:text-emerald-100/80 mt-3 max-w-3xl leading-relaxed">
               El juego completo no se descarga en computadoras ni celulares: <strong>se juega en persona con palanca y botones reales</strong>. Para desbloquear todos los mundos y clasificar en el High Score, encontrá los gabinetes arcade oficiales de 7UP en las salas Sacoa de todo el país, festivales sponsor y puntos estratégicos.
             </p>
           </div>
@@ -573,7 +573,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   className={`px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer ${
                     activeTab === 'todos'
                       ? 'bg-[#A4D902] text-[#01592A] shadow-md'
-                      : 'bg-white/10 text-white/80 hover:bg-white/20'
+                      : 'bg-[#F1F6D5] dark:bg-white/10 text-[#01592A]/80 dark:text-white/80 hover:bg-[#F1F6D5] dark:hover:bg-white/20'
                   }`}
                 >
                   Todos los puntos ({ARCADE_SPOTS.length})
@@ -587,7 +587,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   className={`px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 ${
                     activeTab === 'sacoa'
                       ? 'bg-[#F2081B] text-white shadow-md'
-                      : 'bg-white/10 text-white/80 hover:bg-white/20'
+                      : 'bg-[#F1F6D5] dark:bg-white/10 text-[#01592A]/80 dark:text-white/80 hover:bg-[#F1F6D5] dark:hover:bg-white/20'
                   }`}
                 >
                   <Gamepad2 className="w-3.5 h-3.5" />
@@ -601,8 +601,8 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   }}
                   className={`px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 ${
                     activeTab === 'eventos'
-                      ? 'bg-[#01592A] text-white shadow-md'
-                      : 'bg-white/10 text-white/80 hover:bg-white/20'
+                      ? 'bg-white dark:bg-[#01592A] text-[#01592A] dark:text-white shadow-md'
+                      : 'bg-[#F1F6D5] dark:bg-white/10 text-[#01592A]/80 dark:text-white/80 hover:bg-[#F1F6D5] dark:hover:bg-white/20'
                   }`}
                 >
                   <Music className="w-3.5 h-3.5" />
@@ -617,7 +617,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   className={`px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 ${
                     activeTab === 'estrategicos'
                       ? 'bg-[#A4D902] text-black shadow-md'
-                      : 'bg-white/10 text-white/80 hover:bg-white/20'
+                      : 'bg-[#F1F6D5] dark:bg-white/10 text-[#01592A]/80 dark:text-white/80 hover:bg-[#F1F6D5] dark:hover:bg-white/20'
                   }`}
                 >
                   <Store className="w-3.5 h-3.5" />
@@ -629,19 +629,19 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
               <div className="flex flex-col sm:flex-row gap-3">
                 {/* Search Input */}
                 <div className="relative flex-1">
-                  <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-emerald-300/60" />
+                  <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#01592A]/80 dark:text-emerald-300/60" />
                   <input
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Buscar por sucursal, ciudad o festival..."
-                    className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-black/40 border border-emerald-500/25 text-white placeholder-emerald-300/40 text-xs focus:outline-none focus:border-[#A4D902]"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white dark:bg-black/40 border border-emerald-500/25 text-[#01592A] dark:text-white placeholder-[#01592A]/55 dark:placeholder-emerald-300/40 text-xs focus:outline-none focus:border-[#A4D902]"
                   />
                   {searchQuery && (
                     <button
                       type="button"
                       onClick={() => setSearchQuery('')}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 text-white/60 hover:text-white text-xs"
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-[#01592A]/80 dark:text-white/60 hover:text-[#01592A] dark:hover:text-white text-xs"
                     >
                       Limpiar
                     </button>
@@ -655,7 +655,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                     sound.playClick();
                     setSelectedCity(e.target.value);
                   }}
-                  className="px-4 py-2.5 rounded-xl bg-black/40 border border-emerald-500/25 text-white text-xs font-bold focus:outline-none focus:border-[#A4D902] cursor-pointer"
+                  className="px-4 py-2.5 rounded-xl bg-white dark:bg-black/40 border border-emerald-500/25 text-[#01592A] dark:text-white text-xs font-bold focus:outline-none focus:border-[#A4D902] cursor-pointer"
                 >
                   <option value="todas">Todas las Ciudades</option>
                   <option value="caba">Buenos Aires &amp; CABA</option>
@@ -670,8 +670,8 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
               {/* Spots Cards Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-2 max-h-[560px] overflow-y-auto pr-1">
                 {filteredSpots.length === 0 ? (
-                  <div className="col-span-full p-8 text-center bg-black/30 rounded-2xl border border-white/10">
-                    <p className="text-sm text-emerald-200/70">
+                  <div className="col-span-full p-8 text-center bg-white dark:bg-black/30 rounded-2xl border border-[#01592A]/15 dark:border-white/10">
+                    <p className="text-sm text-[#01592A]/80 dark:text-emerald-200/70">
                       No se encontraron puntos para ese filtro. Probá seleccionando "Todas las ciudades" o limpiando el buscador.
                     </p>
                   </div>
@@ -680,38 +680,38 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                     <div
                       key={spot.id}
                       onClick={() => handleOpenSpotDetails(spot)}
-                      className="p-4 rounded-2xl bg-black/40 border border-emerald-500/20 hover:border-emerald-400/50 hover:bg-black/60 transition-all cursor-pointer flex flex-col justify-between group"
+                      className="p-4 rounded-2xl bg-white dark:bg-black/40 border border-emerald-500/20 hover:border-emerald-400/50 hover:bg-white dark:hover:bg-black/60 transition-all cursor-pointer flex flex-col justify-between group"
                     >
                       <div>
                         {/* Header Badges */}
                         <div className="flex items-center justify-between gap-2 mb-2">
                           <span
-                            className={`px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider ${spot.badgeColor}`}
+                            className={`px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider ${spot.badgeColor} ${spot.badgeColor.includes('text-black') ? '' : 'text-white'}`}
                           >
                             {spot.badge}
                           </span>
-                          <span className="text-[10px] font-mono text-emerald-300/70">
+                          <span className="text-[10px] font-mono text-[#01592A]/80 dark:text-emerald-300/70">
                             {spot.city}
                           </span>
                         </div>
 
-                        <h4 className="text-sm font-black text-white group-hover:text-[#A4D902] transition-colors leading-snug">
+                        <h4 className="text-sm font-black text-[#01592A] dark:text-white group-hover:text-[#01592A] dark:group-hover:text-[#A4D902] transition-colors leading-snug">
                           {spot.name}
                         </h4>
 
-                        <div className="flex items-start gap-1.5 mt-1 text-[11px] text-emerald-100/70">
-                          <MapPin className="w-3.5 h-3.5 text-[#A4D902] shrink-0 mt-0.5" />
+                        <div className="flex items-start gap-1.5 mt-1 text-[11px] text-[#01592A]/80 dark:text-emerald-100/70">
+                          <MapPin className="w-3.5 h-3.5 text-[#01592A] dark:text-[#A4D902] shrink-0 mt-0.5" />
                           <span className="line-clamp-1">{spot.location}</span>
                         </div>
 
-                        <p className="text-[11px] text-emerald-300/80 mt-2 line-clamp-2">
+                        <p className="text-[11px] text-[#01592A]/80 dark:text-emerald-300/80 mt-2 line-clamp-2">
                           🕹️ {spot.cabinetType}
                         </p>
                       </div>
 
-                      <div className="mt-3 pt-2.5 border-t border-white/10 flex items-center justify-between text-[11px]">
-                        <span className="text-[#A4D902] font-bold">Ver cómo jugar</span>
-                        <ArrowRight className="w-3.5 h-3.5 text-[#A4D902] group-hover:translate-x-1 transition-transform" />
+                      <div className="mt-3 pt-2.5 border-t border-[#01592A]/15 dark:border-white/10 flex items-center justify-between text-[11px]">
+                        <span className="text-[#01592A] dark:text-[#A4D902] font-bold">Ver cómo jugar</span>
+                        <ArrowRight className="w-3.5 h-3.5 text-[#01592A] dark:text-[#A4D902] group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
                   ))

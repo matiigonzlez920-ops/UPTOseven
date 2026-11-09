@@ -94,19 +94,19 @@ export const RosarioSpotsMap: React.FC<RosarioSpotsMapProps> = ({
       {/* Interactive Map & Spots Grid - Map has primary visual hierarchy */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         {/* Dominant Centerpiece: Google Maps Interactive Viewer */}
-        <div className="lg:col-span-8 bg-linear-to-b from-[#01592A] via-[#01592A] to-[#01260F] rounded-3xl p-5 sm:p-6 border-2 border-emerald-500/40 shadow-2xl text-white relative overflow-hidden flex flex-col justify-between">
+        <div className="lg:col-span-8 bg-linear-to-b from-white dark:from-[#01592A] via-white dark:via-[#01592A] to-[#F1F6D5] dark:to-[#01260F] rounded-3xl p-5 sm:p-6 border-2 border-emerald-500/40 shadow-2xl text-[#01592A] dark:text-white relative overflow-hidden flex flex-col justify-between">
           {/* Map Top Bar */}
           <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-[#F2081B] animate-ping" />
-              <h3 className="text-sm sm:text-base font-black uppercase tracking-wider text-white">
-                Punto activo: <span className="text-[#A4D902]">{selectedSpot.name}</span>
+              <h3 className="text-sm sm:text-base font-black uppercase tracking-wider text-[#01592A] dark:text-white">
+                Punto activo: <span className="text-[#01592A] dark:text-[#A4D902]">{selectedSpot.name}</span>
               </h3>
             </div>
           </div>
 
           {/* Large Hero Real Google Maps Display */}
-          <div className="relative w-full h-[460px] sm:h-[520px] lg:h-[560px] bg-neutral-950 rounded-2xl border-2 border-white/20 overflow-hidden shadow-inner">
+          <div className="relative w-full h-[460px] sm:h-[520px] lg:h-[560px] bg-white dark:bg-neutral-950 rounded-2xl border-2 border-[#01592A]/15 dark:border-white/20 overflow-hidden shadow-inner">
             <iframe
               id="real-rosario-google-map"
               title="Mapa Real de Rosario - Puntos Dispenser 7UP"
@@ -119,21 +119,21 @@ export const RosarioSpotsMap: React.FC<RosarioSpotsMapProps> = ({
           </div>
 
           {/* Active spot card summary banner below map */}
-          <div className="mt-4 p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="mt-4 p-4 rounded-2xl bg-[#F1F6D5] dark:bg-white/10 backdrop-blur-md border border-[#01592A]/15 dark:border-white/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-xs font-mono text-[#A4D902] font-bold">
+                <span className="text-xs font-mono text-[#01592A] dark:text-[#A4D902] font-bold">
                   {selectedSpot.subname}
                 </span>
                 <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#A4D902] text-[#01592A] font-extrabold">
                   {selectedSpot.status}
                 </span>
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-white/20 text-white font-mono">
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#F1F6D5] dark:bg-white/20 text-[#01592A] dark:text-white font-mono">
                   Stock: {selectedSpot.stockPercent}%
                 </span>
               </div>
-              <p className="text-xs text-emerald-100/90 mt-1 flex items-center gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-[#A4D902] shrink-0" />
+              <p className="text-xs text-[#01592A]/80 dark:text-emerald-100/90 mt-1 flex items-center gap-1.5">
+                <MapPin className="w-3.5 h-3.5 text-[#01592A] dark:text-[#A4D902] shrink-0" />
                 <span>{selectedSpot.address} • {selectedSpot.hours}</span>
               </p>
             </div>

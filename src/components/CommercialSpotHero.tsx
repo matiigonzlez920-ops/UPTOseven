@@ -55,7 +55,7 @@ export const CommercialSpotHero: React.FC<CommercialSpotHeroProps> = () => {
   return (
     <section
       id="commercial-spot-section"
-      className="relative w-full h-screen min-h-[580px] lg:min-h-[700px] bg-black overflow-hidden flex flex-col justify-start"
+      className="relative w-full h-screen min-h-[580px] lg:min-h-[700px] bg-[#F1F6D5] dark:bg-black overflow-hidden flex flex-col justify-start"
     >
       {/* 100% Full-bleed background video container (fills entire section) */}
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
@@ -69,10 +69,6 @@ export const CommercialSpotHero: React.FC<CommercialSpotHeroProps> = () => {
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] min-w-full h-[56.25vw] min-h-full pointer-events-none"
         />
       </div>
-
-      {/* Cinematic subtle Vignettes / Gradients */}
-      <div className="absolute inset-x-0 top-0 h-44 bg-linear-to-b from-black/80 via-black/30 to-transparent pointer-events-none z-10" />
-      <div className="absolute inset-x-0 bottom-0 h-36 bg-linear-to-t from-black/80 via-black/25 to-transparent pointer-events-none z-10" />
 
       {/* Top Banner Audio Controls: Positioned below fixed global header */}
       <div className="relative z-20 w-full px-4 sm:px-8 pt-24 sm:pt-28 flex items-center justify-end pointer-events-auto">

@@ -139,7 +139,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           CÁPSULA 7UP STREETWEAR & DISPENSERS EN ROSARIO
           =================================================== */}
       <section id="capsula-home-highlight" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="bg-linear-to-r from-[#01592A] via-[#01592A] to-[#01592A] rounded-3xl p-6 sm:p-10 border-2 border-[#A4D902]/50 shadow-2xl text-white relative overflow-hidden">
+        <div className="bg-linear-to-r from-white dark:from-[#01592A] via-white dark:via-[#01592A] to-[#F1F6D5] dark:to-[#01592A] rounded-3xl p-6 sm:p-10 border-2 border-[#A4D902]/50 shadow-2xl text-[#01592A] dark:text-white relative overflow-hidden">
           {/* Ambient light */}
           <div className="absolute top-0 right-0 w-80 h-80 bg-[#A4D902]/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -149,10 +149,10 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                 <MapPin className="w-3.5 h-3.5" />
                 <span>EXCLUSIVO ROSARIO, SANTA FE • DISPENSER DE GASEOSA</span>
               </div>
-              <h3 className="text-3xl sm:text-5xl font-black tracking-tight uppercase leading-tight text-white">
+              <h3 className="text-3xl sm:text-5xl font-black tracking-tight uppercase leading-tight text-[#01592A] dark:text-white">
                 CONSEGUÍ TU CÁPSULA 7UP
               </h3>
-              <p className="text-emerald-100 text-sm sm:text-base font-medium mt-2 max-w-xl leading-relaxed">
+              <p className="text-[#01592A]/80 dark:text-emerald-100 text-sm sm:text-base font-medium mt-2 max-w-xl leading-relaxed">
                 La cápsula es literalmente un cilindro con indumentaria oficial (remeras oversize, buzos, gorras) y merch vintage que sale directamente de una máquina expendedora de gaseosa instalada en puntos clave de la ciudad de Rosario.
               </p>
 
