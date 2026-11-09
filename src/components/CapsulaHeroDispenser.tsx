@@ -325,11 +325,11 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                   </span>
                 </div>
 
-                {/* Grid of 4 Transparent Cylindrical Capsules inside helical metal coils */}
+                {/* Grid of collection Transparent Cylindrical Capsules inside helical metal coils */}
                 <div className="grid grid-cols-2 gap-2.5 relative z-10">
-                  {CAPSULA_MERCH_ITEMS.slice(0, 4).map((item, idx) => {
+                  {CAPSULA_MERCH_ITEMS.map((item, idx) => {
                     const isSelected = activeItemIndex === idx;
-                    const slotCodes = ['A-1', 'A-2', 'B-1', 'B-2'];
+                    const slotCode = `${String.fromCharCode(65 + Math.floor(idx / 2))}-${idx % 2 + 1}`;
 
                     return (
                       <div
@@ -353,7 +353,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                                 : 'bg-white/20 text-white'
                             }`}
                           >
-                            {slotCodes[idx]}
+                            {slotCode}
                           </span>
                           <span className="text-[#A4D902] text-[9px] font-bold">
                             {item.badge}

@@ -55,7 +55,7 @@ export const CapsulaMerchShowcase: React.FC = () => {
       </div>
 
       {/* Grid of Capsule Items */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredItems.map((item) => (
           <motion.div
             key={item.id}
@@ -71,7 +71,7 @@ export const CapsulaMerchShowcase: React.FC = () => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className={item.id === 'tshirt-cherry'
+                  className={item.id.startsWith('tshirt-')
                     ? 'w-full h-full object-contain'
                     : 'w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'}
                 />
