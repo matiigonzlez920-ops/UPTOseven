@@ -58,11 +58,11 @@ export const CanImageUploaderModal: React.FC<CanImageUploaderModalProps> = ({
           {/* Modal Header */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-emerald-100 dark:border-emerald-800/60 bg-emerald-50/60 dark:bg-[#0A2613]">
             <div className="flex items-center gap-3">
-              <div className="p-2.5 rounded-2xl bg-[#008B3E] text-white">
+              <div className="p-2.5 rounded-2xl bg-[#01592A] text-white">
                 <ImageIcon className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-lg font-black text-emerald-950 dark:text-[#E8F8EC] uppercase tracking-tight">
+                <h3 className="text-lg font-black text-emerald-950 dark:text-[#F1F6D5] uppercase tracking-tight">
                   Imágenes Reales de Latas 7UP
                 </h3>
                 <p className="text-xs text-emerald-800/80 dark:text-emerald-200/80 font-medium">
@@ -99,7 +99,7 @@ export const CanImageUploaderModal: React.FC<CanImageUploaderModalProps> = ({
                   onClick={() => setActiveTab(prod.id)}
                   className={`px-4 py-2 rounded-xl text-xs font-black transition-all ${
                     activeTab === prod.id
-                      ? 'bg-[#008B3E] text-white shadow-xs'
+                      ? 'bg-[#01592A] text-white shadow-xs'
                       : 'bg-emerald-50 dark:bg-[#0C2A15] text-emerald-900 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-emerald-800/50'
                   }`}
                 >
@@ -140,15 +140,15 @@ export const CanImageUploaderModal: React.FC<CanImageUploaderModalProps> = ({
                       }}
                       className={`flex-1 w-full border-2 border-dashed rounded-2xl p-6 flex flex-col items-center justify-center text-center transition-all cursor-pointer ${
                         isDrag
-                          ? 'border-[#008B3E] bg-emerald-100/50 dark:bg-emerald-900/40'
+                          ? 'border-[#01592A] bg-emerald-100/50 dark:bg-emerald-900/40'
                           : 'border-emerald-300 dark:border-emerald-700/60 hover:border-emerald-500 bg-white dark:bg-[#082010]'
                       }`}
                       onClick={() => {
                         document.getElementById(`file-input-${prod.id}`)?.click();
                       }}
                     >
-                      <Upload className="w-8 h-8 text-[#008B3E] dark:text-[#50E528] mb-2" />
-                      <p className="text-sm font-bold text-emerald-950 dark:text-[#E8F8EC]">
+                      <Upload className="w-8 h-8 text-[#01592A] dark:text-[#A4D902] mb-2" />
+                      <p className="text-sm font-bold text-emerald-950 dark:text-[#F1F6D5]">
                         Arrastrá y soltá la imagen de la lata aquí
                       </p>
                       <p className="text-xs text-emerald-700 dark:text-emerald-300 mt-1">
@@ -201,7 +201,7 @@ export const CanImageUploaderModal: React.FC<CanImageUploaderModalProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="px-6 py-2.5 rounded-full bg-[#008B3E] hover:bg-[#007333] text-white font-black text-xs uppercase tracking-wider shadow-sm transition-all"
+              className="px-6 py-2.5 rounded-full bg-[#01592A] hover:bg-[#01592A] text-white font-black text-xs uppercase tracking-wider shadow-sm transition-all"
             >
               Listo
             </button>

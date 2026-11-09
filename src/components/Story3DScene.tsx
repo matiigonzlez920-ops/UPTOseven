@@ -727,7 +727,7 @@ export const Story3DScene: React.FC<Story3DSceneProps> = ({
       {/* Loading overlay */}
       {!modelLoaded && (
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40 backdrop-blur-xs rounded-3xl z-20 pointer-events-none">
-          <Loader2 className="w-8 h-8 text-[#7ED957] animate-spin mb-2" />
+          <Loader2 className="w-8 h-8 text-[#A4D902] animate-spin mb-2" />
           <span className="text-xs font-mono font-bold tracking-widest text-white/90 uppercase">
             Iniciando Escenario 3D...
           </span>
@@ -740,7 +740,7 @@ export const Story3DScene: React.FC<Story3DSceneProps> = ({
           userIsDragging ? 'opacity-90 scale-95' : 'opacity-70'
         }`}
       >
-        <Rotate3d className="w-3.5 h-3.5 text-[#50E528] animate-pulse" />
+        <Rotate3d className="w-3.5 h-3.5 text-[#A4D902] animate-pulse" />
         <span>3D Interactivo • Arrastrá 360°</span>
       </div>
     </div>

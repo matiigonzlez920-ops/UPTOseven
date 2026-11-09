@@ -377,7 +377,7 @@ export const Can3DViewer: React.FC<Can3DViewerProps> = ({
       {/* Loading Indicator */}
       {loading && (
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/30 backdrop-blur-xs rounded-3xl z-20 pointer-events-none">
-          <Loader2 className="w-8 h-8 text-[#7ED957] animate-spin mb-2" />
+          <Loader2 className="w-8 h-8 text-[#A4D902] animate-spin mb-2" />
           <span className="text-[11px] font-mono uppercase tracking-widest text-white/90 font-bold">
             Cargando Lata 3D...
           </span>
@@ -391,7 +391,7 @@ export const Can3DViewer: React.FC<Can3DViewerProps> = ({
             isInteracting ? 'opacity-90 scale-95' : 'opacity-70 hover:opacity-100'
           }`}
         >
-          <Rotate3d className="w-3.5 h-3.5 text-[#50E528] animate-pulse" />
+          <Rotate3d className="w-3.5 h-3.5 text-[#A4D902] animate-pulse" />
           <span>3D • Arrastrá para girar</span>
         </div>
       )}

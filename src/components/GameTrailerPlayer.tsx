@@ -172,14 +172,14 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
         />
 
         {/* Ambient Corner Glows */}
-        <div className="absolute -top-20 -left-20 w-80 h-80 rounded-full bg-[#008B3E]/30 blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-[#FFE600]/20 blur-3xl pointer-events-none" />
+        <div className="absolute -top-20 -left-20 w-80 h-80 rounded-full bg-[#01592A]/30 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-[#A4D902]/20 blur-3xl pointer-events-none" />
 
         {/* Top Header Watermark / Trailer Tag */}
         <div className="absolute top-4 left-5 right-5 z-20 flex items-center justify-between text-xs text-white/70">
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#E51E2B] animate-pulse" />
-            <span className="font-mono font-black tracking-widest uppercase text-[#7ED957]">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#F2081B] animate-pulse" />
+            <span className="font-mono font-black tracking-widest uppercase text-[#A4D902]">
               7UP STUDIOS • OFFICIAL GAMEPLAY TRAILER
             </span>
           </div>
@@ -187,7 +187,7 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
             <span className="px-2 py-0.5 rounded-md bg-white/10 font-mono text-[10px] font-bold text-white border border-white/10">
               4K 60FPS
             </span>
-            <span className="px-2 py-0.5 rounded-md bg-[#008B3E] font-mono text-[10px] font-bold text-white uppercase">
+            <span className="px-2 py-0.5 rounded-md bg-[#01592A] font-mono text-[10px] font-bold text-white uppercase">
               ARCADE EDITION
             </span>
           </div>
@@ -211,7 +211,7 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
               {[...Array(16)].map((_, i) => (
                 <div
                   key={i}
-                  className="absolute rounded-full bg-[#7ED957]/30 animate-bounce"
+                  className="absolute rounded-full bg-[#A4D902]/30 animate-bounce"
                   style={{
                     width: `${8 + (i % 6) * 4}px`,
                     height: `${8 + (i % 6) * 4}px`,
@@ -227,7 +227,7 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-xs sm:text-sm font-mono tracking-widest text-[#7ED957] uppercase font-black mb-3"
+              className="text-xs sm:text-sm font-mono tracking-widest text-[#A4D902] uppercase font-black mb-3"
             >
               PREPÁRATE PARA LA EXPERIENCIA MÁS REFRESCANTE
             </motion.span>
@@ -239,9 +239,9 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
               className="relative mb-4"
             >
               <h1 className="text-4xl sm:text-7xl font-black text-white tracking-tight drop-shadow-[0_10px_25px_rgba(0,139,62,0.8)]">
-                7UP <span className="text-[#7ED957]">ARCADE</span>
+                7UP <span className="text-[#A4D902]">ARCADE</span>
               </h1>
-              <span className="block text-lg sm:text-2xl font-black text-[#FFE600] tracking-widest uppercase mt-1">
+              <span className="block text-lg sm:text-2xl font-black text-[#A4D902] tracking-widest uppercase mt-1">
                 ATRAPA LA FRESCURA
               </span>
             </motion.div>
@@ -271,14 +271,14 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
               <div className="flex items-center gap-3">
                 <div className="px-3 py-1.5 rounded-xl bg-black/60 border border-emerald-500/40 text-left">
                   <span className="text-[10px] text-emerald-300 font-mono block">SCORE</span>
-                  <span className="text-lg font-black text-[#FFE600] font-mono">{simScore}</span>
+                  <span className="text-lg font-black text-[#A4D902] font-mono">{simScore}</span>
                 </div>
-                <div className="px-3 py-1.5 rounded-xl bg-[#E51E2B] text-white font-black text-xs uppercase animate-pulse">
+                <div className="px-3 py-1.5 rounded-xl bg-[#F2081B] text-white font-black text-xs uppercase animate-pulse">
                   COMBO {simCombo}X
                 </div>
               </div>
 
-              <div className="px-3 py-1 rounded-full bg-[#008B3E] text-white text-xs font-black uppercase flex items-center gap-1.5">
+              <div className="px-3 py-1 rounded-full bg-[#01592A] text-white text-xs font-black uppercase flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>GAMEPLAY REAL</span>
               </div>
@@ -313,7 +313,7 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
               <motion.div
                 animate={{ y: [-10, -50], opacity: [1, 0], scale: [1, 1.3] }}
                 transition={{ duration: 0.8, repeat: Infinity }}
-                className="absolute left-[52%] bottom-16 text-lg font-black text-[#FFE600] drop-shadow-md"
+                className="absolute left-[52%] bottom-16 text-lg font-black text-[#A4D902] drop-shadow-md"
               >
                 +50 FIZZ!
               </motion.div>
@@ -330,14 +330,14 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
                     className="w-full h-full object-contain filter drop-shadow-[0_10px_20px_rgba(0,139,62,0.8)]"
                   />
                   {/* Catch Aura */}
-                  <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-3 rounded-full bg-[#7ED957] blur-xs animate-ping" />
+                  <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-3 rounded-full bg-[#A4D902] blur-xs animate-ping" />
                 </div>
               </div>
             </div>
 
             {/* Feature Callout Banner */}
             <div className="z-10 p-2.5 rounded-2xl bg-black/75 border border-white/10 text-center flex items-center justify-center gap-2">
-              <Zap className="w-4 h-4 text-[#FFE600]" />
+              <Zap className="w-4 h-4 text-[#A4D902]" />
               <span className="text-xs sm:text-sm font-black text-white">
                 FÍSICA REALISTA DE BURBUJAS • CADENCIA CÍTRICA • CONTROLES FLUIDOS
               </span>
@@ -354,9 +354,9 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
             exit={{ opacity: 0 }}
             className="absolute inset-0 flex items-center justify-center p-6"
           >
-            <div className="relative max-w-xl w-full p-6 sm:p-8 rounded-3xl bg-white text-[#05421A] border-4 border-[#008B3E] shadow-2xl flex flex-col sm:flex-row items-center gap-6">
+            <div className="relative max-w-xl w-full p-6 sm:p-8 rounded-3xl bg-white text-[#01592A] border-4 border-[#01592A] shadow-2xl flex flex-col sm:flex-row items-center gap-6">
               {/* Comic Strip Style Badge */}
-              <div className="absolute -top-3 left-6 px-3 py-1 rounded-md bg-[#FFE600] text-black font-mono text-[10px] font-black uppercase tracking-wider border border-black/20">
+              <div className="absolute -top-3 left-6 px-3 py-1 rounded-md bg-[#A4D902] text-black font-mono text-[10px] font-black uppercase tracking-wider border border-black/20">
                 PERSONAJE DESBLOQUEABLE
               </div>
 
@@ -367,11 +367,11 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
 
               {/* Text & Speech */}
               <div className="flex flex-col text-left">
-                <div className="inline-flex items-center gap-1.5 text-xs font-black text-[#008B3E] uppercase tracking-wider mb-1">
-                  <Sparkles className="w-3.5 h-3.5 text-[#E51E2B]" />
+                <div className="inline-flex items-center gap-1.5 text-xs font-black text-[#01592A] uppercase tracking-wider mb-1">
+                  <Sparkles className="w-3.5 h-3.5 text-[#F2081B]" />
                   <span>CON LA PARTICIPACIÓN ESPECIAL DE</span>
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-black text-[#05421A] tracking-tight leading-none mb-2">
+                <h3 className="text-2xl sm:text-3xl font-black text-[#01592A] tracking-tight leading-none mb-2">
                   FIDO DIDO
                 </h3>
                 <p className="text-xs sm:text-sm text-emerald-900/80 font-medium leading-relaxed">
@@ -397,14 +397,14 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-radial from-[#008B3E]/60 via-[#02200D] to-black"
+            className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-radial from-[#01592A]/60 via-[#02200D] to-black"
           >
             <motion.div
               animate={{ scale: [1, 1.05, 1] }}
               transition={{ duration: 1, repeat: Infinity }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FFE600] text-black font-black text-xs tracking-widest uppercase mb-3 shadow-lg"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#A4D902] text-black font-black text-xs tracking-widest uppercase mb-3 shadow-lg"
             >
-              <Flame className="w-4 h-4 text-[#E51E2B]" />
+              <Flame className="w-4 h-4 text-[#F2081B]" />
               <span>¡MODO FIEBRE DE BURBUJAS!</span>
             </motion.div>
 
@@ -446,14 +446,14 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
             exit={{ opacity: 0 }}
             className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 z-10"
           >
-            <div className="w-16 h-16 rounded-full bg-[#E51E2B] flex items-center justify-center mb-3 shadow-xl">
+            <div className="w-16 h-16 rounded-full bg-[#F2081B] flex items-center justify-center mb-3 shadow-xl">
               <span className="text-3xl font-black text-white">7</span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight mb-1">
               7UP: ATRAPA LA FRESCURA
             </h2>
-            <span className="text-xs sm:text-sm font-mono tracking-widest text-[#7ED957] uppercase font-bold mb-4">
+            <span className="text-xs sm:text-sm font-mono tracking-widest text-[#A4D902] uppercase font-bold mb-4">
               EDICIÓN ARCADE • DISPONIBLE AHORA
             </span>
 
@@ -465,9 +465,9 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
               <button
                 type="button"
                 onClick={onDownloadRequest}
-                className="px-8 py-3.5 rounded-full bg-[#7ED957] hover:bg-[#6ecb47] text-[#05421A] font-black text-xs sm:text-sm uppercase tracking-wider shadow-2xl hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-2"
+                className="px-8 py-3.5 rounded-full bg-[#A4D902] hover:bg-[#A4D902] text-[#01592A] font-black text-xs sm:text-sm uppercase tracking-wider shadow-2xl hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-2"
               >
-                <Sparkles className="w-4 h-4 text-[#E51E2B]" />
+                <Sparkles className="w-4 h-4 text-[#F2081B]" />
                 <span>IR A DESCARGAR ABAJO</span>
               </button>
             )}
@@ -481,7 +481,7 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
               type="button"
               id="trailer-center-play-btn"
               onClick={handleTogglePlay}
-              className="w-20 h-20 rounded-full bg-[#7ED957] hover:bg-[#6ecb47] text-[#05421A] flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all cursor-pointer group"
+              className="w-20 h-20 rounded-full bg-[#A4D902] hover:bg-[#A4D902] text-[#01592A] flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all cursor-pointer group"
               aria-label={currentTime >= TOTAL_DURATION ? 'Repetir trailer' : 'Reproducir trailer'}
             >
               {currentTime >= TOTAL_DURATION ? (
@@ -512,7 +512,7 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
         >
           {/* Progress fill */}
           <div
-            className="h-full bg-linear-to-r from-[#008B3E] via-[#7ED957] to-[#FFE600] rounded-full relative"
+            className="h-full bg-linear-to-r from-[#01592A] via-[#A4D902] to-[#A4D902] rounded-full relative"
             style={{ width: `${progressPercent}%` }}
           />
         </div>
@@ -528,7 +528,7 @@ export const GameTrailerPlayer: React.FC<GameTrailerPlayerProps> = ({ onDownload
                 onClick={() => handleSeek(ch.startTime)}
                 className={`px-2.5 py-1 rounded-lg text-[10px] sm:text-xs font-mono font-bold transition-all shrink-0 cursor-pointer ${
                   isCurrent
-                    ? 'bg-[#7ED957] text-[#05421A] shadow-xs'
+                    ? 'bg-[#A4D902] text-[#01592A] shadow-xs'
                     : 'bg-white/5 text-white/60 hover:bg-white/10 hover:text-white'
                 }`}
               >

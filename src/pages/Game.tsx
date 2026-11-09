@@ -62,7 +62,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Mar del Plata',
     province: 'Buenos Aires',
     badge: 'Cuna Histórica de Sacoa',
-    badgeColor: 'bg-[#E51E2B]',
+    badgeColor: 'bg-[#F2081B]',
     cabinetType: '2x Gabinetes Dedicados CRT 29" • Palancas Sanwa',
     perk: 'Presentá 2 latas vacías de 7UP en boletería y te cargan 4 fichas gratis en tu tarjeta Sacoa.',
     hours: 'Lunes a Domingos: 10:00 a 02:00 hs',
@@ -78,7 +78,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Mar del Plata',
     province: 'Buenos Aires',
     badge: 'Sucursal Clásica',
-    badgeColor: 'bg-[#008B3E]',
+    badgeColor: 'bg-[#01592A]',
     cabinetType: 'Gabinete Up to Seven Arcade • Marquesina Neón Verde',
     perk: 'High Score del día se lleva un 6-pack de 7UP helado.',
     hours: 'Todos los días: 12:00 a 01:00 hs',
@@ -94,7 +94,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'CABA',
     province: 'Buenos Aires',
     badge: 'Punto Porteño Emblemático',
-    badgeColor: 'bg-[#FFE600] text-black',
+    badgeColor: 'bg-[#A4D902] text-black',
     cabinetType: 'Gabinete 90s Original Restaurado • 60 FPS Chiptune Audio',
     perk: 'Happy Hour de 17 a 19 hs: 2x1 en créditos para el arcade 7UP.',
     hours: 'Lunes a Sábados: 11:00 a 00:00 hs',
@@ -110,7 +110,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'CABA',
     province: 'Buenos Aires',
     badge: 'Sede Torneos Oficiales',
-    badgeColor: 'bg-[#E51E2B]',
+    badgeColor: 'bg-[#F2081B]',
     cabinetType: 'Doble Gabinete Enlazado • Batalla Versus 2 Jugadores',
     perk: 'Los viernes torneos relámpago con premios: remeras vintage y latas coleccionables.',
     hours: 'Domingo a Jueves: 10:00 a 22:00 hs | Viernes y Sábados: 10:00 a 00:00 hs',
@@ -126,7 +126,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Gran Buenos Aires',
     province: 'Buenos Aires',
     badge: 'Gabinete Deluxe',
-    badgeColor: 'bg-[#008B3E]',
+    badgeColor: 'bg-[#01592A]',
     cabinetType: 'Gabinete 4-Player Custom 7UP • Pantalla Curva CRT 33"',
     perk: 'Canje de 1 lata de 7UP fría gratis al superar los 50.000 puntos.',
     hours: 'Lunes a Domingos: 10:00 a 23:00 hs',
@@ -142,7 +142,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Rosario',
     province: 'Santa Fe',
     badge: 'Histórico Rosario',
-    badgeColor: 'bg-[#E51E2B]',
+    badgeColor: 'bg-[#F2081B]',
     cabinetType: 'Gabinete Arcade Clásico • Controles Sanwa Originales',
     perk: '2 fichas gratis los sábados presentando cualquier producto de la línea 7UP.',
     hours: 'Lunes a Domingos: 11:00 a 23:00 hs',
@@ -158,7 +158,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Rosario',
     province: 'Santa Fe',
     badge: 'Zona Gamer Rosario',
-    badgeColor: 'bg-[#008B3E]',
+    badgeColor: 'bg-[#01592A]',
     cabinetType: 'Gabinete Custom 7UP con Dispensador de Stickers Fido Dido',
     perk: 'Sticker holográfico de Fido Dido gratis por cada partida completada.',
     hours: 'Todos los días: 10:00 a 22:30 hs',
@@ -174,7 +174,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Córdoba',
     province: 'Córdoba',
     badge: 'Sede Central Córdoba',
-    badgeColor: 'bg-[#FFE600] text-black',
+    badgeColor: 'bg-[#A4D902] text-black',
     cabinetType: 'Gabinete Retro Iluminado • Sonido Estéreo Alta Fidelidad',
     perk: 'Top 3 del ranking cordobés clasifica al Torneo Nacional 7UP.',
     hours: 'Lunes a Domingos: 10:00 a 22:00 hs',
@@ -190,7 +190,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Mendoza',
     province: 'Mendoza',
     badge: 'Cuyo Oficial',
-    badgeColor: 'bg-[#008B3E]',
+    badgeColor: 'bg-[#01592A]',
     cabinetType: 'Gabinete 7UP Fresh Edition • Pantalla CRT 29"',
     perk: 'Canje de merchandising Fido Dido con tickets del juego.',
     hours: 'Lunes a Domingos: 11:00 a 23:00 hs',
@@ -206,7 +206,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Bariloche',
     province: 'Río Negro',
     badge: 'Edición Invernal',
-    badgeColor: 'bg-[#E51E2B]',
+    badgeColor: 'bg-[#F2081B]',
     cabinetType: 'Gabinete Calefaccionado con Arte Vintage 7UP en Nieve',
     perk: 'Chocolate caliente con 7UP Mocktail de bienvenida a los mejores récords.',
     hours: 'Lunes a Domingos: 14:00 a 01:00 hs',
@@ -224,7 +224,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Gran Buenos Aires',
     province: 'Buenos Aires',
     badge: 'Festival Sponsor Oficial',
-    badgeColor: 'bg-[#7ED957] text-[#05421A]',
+    badgeColor: 'bg-[#A4D902] text-[#01592A]',
     cabinetType: 'Batería de 6 Gabinetes Arcade en Red • Free Play continuo',
     perk: 'Juego libre y gratuito para asistentes del festival + latas heladas de regalo para quienes pasen el nivel 3.',
     hours: 'Durante los 3 días del festival: 12:00 a 01:00 hs',
@@ -240,7 +240,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Córdoba',
     province: 'Córdoba',
     badge: 'Rock & Frescura',
-    badgeColor: 'bg-[#FFE600] text-black',
+    badgeColor: 'bg-[#A4D902] text-black',
     cabinetType: '4 Gabinetes Blindados de Uso Rudo • Sonido Envolvente',
     perk: 'Descansá del pogo jugando al 7UP Arcade con agua y gaseosa helada bonificada.',
     hours: 'Jornadas del festival: 14:00 a 03:00 hs',
@@ -256,7 +256,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'CABA',
     province: 'Buenos Aires',
     badge: 'Festival Internacional',
-    badgeColor: 'bg-[#7ED957] text-[#05421A]',
+    badgeColor: 'bg-[#A4D902] text-[#01592A]',
     cabinetType: 'Gabinetes con Estética Cyberpunk 90s y Neón Verde',
     perk: 'Gorras vintage Fido Dido exclusivas para quienes completen el juego entero.',
     hours: 'Durante el festival: 13:00 a 02:00 hs',
@@ -272,7 +272,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Mar del Plata',
     province: 'Buenos Aires',
     badge: 'Pop-Up Nocturno',
-    badgeColor: 'bg-[#E51E2B]',
+    badgeColor: 'bg-[#F2081B]',
     cabinetType: 'Gabinetes Lumínicos LED Reactivos al Ritmo de la Música',
     perk: 'Tragos especiales con 7UP y fichas de regalo al ingresar antes de las 01:00 hs.',
     hours: 'Noches seleccionadas de verano: 23:30 a 06:00 hs',
@@ -288,7 +288,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'CABA',
     province: 'Buenos Aires',
     badge: 'Convención Gamer',
-    badgeColor: 'bg-[#008B3E]',
+    badgeColor: 'bg-[#01592A]',
     cabinetType: 'Arena de Competencia Arcade con Transmisión en Pantalla Gigante',
     perk: 'El ganador del torneo se lleva un gabinete arcade real 7UP a escala para su casa.',
     hours: 'Viernes a Domingo: 12:00 a 21:00 hs',
@@ -306,7 +306,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'CABA',
     province: 'Buenos Aires',
     badge: 'Bartop Callejero',
-    badgeColor: 'bg-[#FFE600] text-black',
+    badgeColor: 'bg-[#A4D902] text-black',
     cabinetType: 'Bartop Arcade de Madera Montado en Mostrador de Kiosco',
     perk: 'Comprando una lata de 7UP helada te dan 2 créditos para jugar al paso.',
     hours: 'Abierto 24 Horas',
@@ -322,7 +322,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Rosario',
     province: 'Santa Fe',
     badge: 'Playero / Río Paraná',
-    badgeColor: 'bg-[#7ED957] text-[#05421A]',
+    badgeColor: 'bg-[#A4D902] text-[#01592A]',
     cabinetType: 'Gabinete Climatizado Resistente a Intemperie frente a la Playa',
     perk: 'Canjeá 3 tapitas doradas por una ficha y un vaso térmico coleccionable.',
     hours: 'Martes a Domingos: 10:00 a 20:00 hs (Temporada de Primavera/Verano)',
@@ -338,7 +338,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Costa Atlántica',
     province: 'Buenos Aires',
     badge: 'Temporada Verano',
-    badgeColor: 'bg-[#E51E2B]',
+    badgeColor: 'bg-[#F2081B]',
     cabinetType: 'Pop-Up Truck 7UP con 3 Gabinetes Arcade Retro',
     perk: 'Torneos diarios a las 18:00 hs con packs de 7UP y toallas playeras.',
     hours: 'Diciembre a Marzo: 11:00 a 22:00 hs',
@@ -354,7 +354,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'CABA',
     province: 'Buenos Aires',
     badge: 'Tránsito Diario',
-    badgeColor: 'bg-[#008B3E]',
+    badgeColor: 'bg-[#01592A]',
     cabinetType: 'Gabinete Compacto de Alta Velocidad para Partidas Rápidas',
     perk: 'Partida relámpago de 3 minutos para pasar el tiempo mientras llega el tren.',
     hours: 'Lunes a Viernes: 07:00 a 21:00 hs',
@@ -370,7 +370,7 @@ const ARCADE_SPOTS: ArcadeSpot[] = [
     city: 'Rosario',
     province: 'Santa Fe',
     badge: 'Punto Icónico',
-    badgeColor: 'bg-[#FFE600] text-black',
+    badgeColor: 'bg-[#A4D902] text-black',
     cabinetType: 'Gabinete Clásico 7UP con marquesina de Fido Dido',
     perk: 'High Score semanal gana foto enmarcada en el hall y pack de latas.',
     hours: 'Lunes a Domingos: 09:00 a 23:00 hs',
@@ -448,15 +448,15 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
           =================================================== */}
       <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 text-center">
         {/* Glow backdrop */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-72 rounded-full bg-[#008B3E]/15 blur-3xl -z-10 pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-72 rounded-full bg-[#01592A]/15 blur-3xl -z-10 pointer-events-none" />
 
         <div className="flex flex-col items-center gap-4 max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#008B3E] text-white text-xs font-black tracking-wider uppercase shadow-sm"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#01592A] text-white text-xs font-black tracking-wider uppercase shadow-sm"
           >
-            <Sparkles className="w-3.5 h-3.5 text-[#FFE600]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#A4D902]" />
             <span>NIVEL 1 DEMO OFICIAL EN LÍNEA • EL JUEGO COMPLETO ESTÁ EN LOS ARCADES</span>
           </motion.div>
 
@@ -464,7 +464,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl sm:text-6xl font-black text-[#05421A] dark:text-[#E8F8EC] tracking-tight leading-[1.08]"
+            className="text-4xl sm:text-6xl font-black text-[#01592A] dark:text-[#F1F6D5] tracking-tight leading-[1.08]"
           >
             7UP: ATRAPA LA FRESCURA
           </motion.h1>
@@ -484,19 +484,19 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
           2. JUEGO ARCADE EN VIVO (UP TO SEVEN: NIVEL 1)
           =================================================== */}
       <section id="arcade-game-section" className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 lg:px-6 py-2 sm:py-4">
-        <div className="relative rounded-[32px] sm:rounded-[40px] bg-[#071F11] border-4 border-[#0F6B3A] dark:border-[#25D366]/40 p-2.5 sm:p-5 shadow-2xl overflow-hidden">
+        <div className="relative rounded-[32px] sm:rounded-[40px] bg-[#071F11] border-4 border-[#0F6B3A] dark:border-[#029F3D]/40 p-2.5 sm:p-5 shadow-2xl overflow-hidden">
           {/* Header Bar */}
           <div className="flex flex-wrap items-center justify-between gap-4 pb-3 px-2 border-b border-emerald-800/60">
             <div className="flex items-center gap-3">
-              <div className="w-3.5 h-3.5 rounded-full bg-[#E51E2B] animate-pulse" />
-              <div className="w-3.5 h-3.5 rounded-full bg-[#FFE600]" />
-              <div className="w-3.5 h-3.5 rounded-full bg-[#25D366]" />
-              <span className="font-['Press_Start_2P',monospace] text-xs sm:text-sm text-[#FFE600] tracking-wider ml-2">
+              <div className="w-3.5 h-3.5 rounded-full bg-[#F2081B] animate-pulse" />
+              <div className="w-3.5 h-3.5 rounded-full bg-[#A4D902]" />
+              <div className="w-3.5 h-3.5 rounded-full bg-[#029F3D]" />
+              <span className="font-['Press_Start_2P',monospace] text-xs sm:text-sm text-[#A4D902] tracking-wider ml-2">
                 UP TO SEVEN • ARCADE 90s
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-xs font-mono text-[#B8CDB0] hidden sm:inline">
+              <span className="text-xs font-mono text-[#F1F6D5] hidden sm:inline">
                 🎮 Controles: Flechas / A-D • Espacio / W para saltar • S para subte
               </span>
             </div>
@@ -513,7 +513,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
           </div>
 
           {/* Quick instructions bar */}
-          <div className="mt-4 pt-3 flex flex-wrap items-center justify-between gap-3 text-xs text-[#B8CDB0] font-mono px-2">
+          <div className="mt-4 pt-3 flex flex-wrap items-center justify-between gap-3 text-xs text-[#F1F6D5] font-mono px-2">
             <div className="flex flex-wrap items-center gap-2">
               <span className="px-2.5 py-1 rounded-md bg-[#0F6B3A]/60 text-white font-bold border border-emerald-600/40">
                 Limas &amp; Tapitas
@@ -521,7 +521,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
               <span>¡Juntá las 7 tapitas y llegá al kiosco para canjear tu Seven Up helada!</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-[#FFE600] font-bold">Demo jugable en navegador • El juego completo en maquinitas</span>
+              <span className="text-[#A4D902] font-bold">Demo jugable en navegador • El juego completo en maquinitas</span>
             </div>
           </div>
         </div>
@@ -538,19 +538,19 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
       >
         <div className="relative rounded-[36px] bg-linear-to-br from-[#042B12] via-[#02200D] to-[#011408] border-2 border-emerald-500/30 p-6 sm:p-12 lg:p-14 text-white shadow-2xl overflow-hidden">
           {/* Ambient Glows */}
-          <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#7ED957]/15 blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-[#E51E2B]/15 blur-3xl pointer-events-none" />
+          <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#A4D902]/15 blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-[#F2081B]/15 blur-3xl pointer-events-none" />
 
           {/* Section Main Header */}
           <div className="relative z-10 mb-8 sm:mb-12">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#E51E2B] text-white font-black text-xs uppercase tracking-wider shadow-md mb-4">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F2081B] text-white font-black text-xs uppercase tracking-wider shadow-md mb-4">
               <Gamepad2 className="w-4 h-4 text-white animate-pulse" />
               <span>GABINETES ARCADE FÍSICOS • EXPERIENCIA 90s EXCLUSIVA</span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
               ¿QUERÉS JUGAR EL JUEGO ENTERO? <br />
-              <span className="text-[#7ED957]">BUSCÁ LAS MAQUINITAS ARCADE DE 7UP</span>
+              <span className="text-[#A4D902]">BUSCÁ LAS MAQUINITAS ARCADE DE 7UP</span>
             </h2>
 
             <p className="text-sm sm:text-base text-emerald-100/80 mt-3 max-w-3xl leading-relaxed">
@@ -572,7 +572,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   }}
                   className={`px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer ${
                     activeTab === 'todos'
-                      ? 'bg-[#7ED957] text-[#05421A] shadow-md'
+                      ? 'bg-[#A4D902] text-[#01592A] shadow-md'
                       : 'bg-white/10 text-white/80 hover:bg-white/20'
                   }`}
                 >
@@ -586,7 +586,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   }}
                   className={`px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 ${
                     activeTab === 'sacoa'
-                      ? 'bg-[#E51E2B] text-white shadow-md'
+                      ? 'bg-[#F2081B] text-white shadow-md'
                       : 'bg-white/10 text-white/80 hover:bg-white/20'
                   }`}
                 >
@@ -601,7 +601,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   }}
                   className={`px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 ${
                     activeTab === 'eventos'
-                      ? 'bg-[#008B3E] text-white shadow-md'
+                      ? 'bg-[#01592A] text-white shadow-md'
                       : 'bg-white/10 text-white/80 hover:bg-white/20'
                   }`}
                 >
@@ -616,7 +616,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   }}
                   className={`px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center gap-1.5 ${
                     activeTab === 'estrategicos'
-                      ? 'bg-[#FFE600] text-black shadow-md'
+                      ? 'bg-[#A4D902] text-black shadow-md'
                       : 'bg-white/10 text-white/80 hover:bg-white/20'
                   }`}
                 >
@@ -635,7 +635,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder="Buscar por sucursal, ciudad o festival..."
-                    className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-black/40 border border-emerald-500/25 text-white placeholder-emerald-300/40 text-xs focus:outline-none focus:border-[#7ED957]"
+                    className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-black/40 border border-emerald-500/25 text-white placeholder-emerald-300/40 text-xs focus:outline-none focus:border-[#A4D902]"
                   />
                   {searchQuery && (
                     <button
@@ -655,7 +655,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                     sound.playClick();
                     setSelectedCity(e.target.value);
                   }}
-                  className="px-4 py-2.5 rounded-xl bg-black/40 border border-emerald-500/25 text-white text-xs font-bold focus:outline-none focus:border-[#7ED957] cursor-pointer"
+                  className="px-4 py-2.5 rounded-xl bg-black/40 border border-emerald-500/25 text-white text-xs font-bold focus:outline-none focus:border-[#A4D902] cursor-pointer"
                 >
                   <option value="todas">Todas las Ciudades</option>
                   <option value="caba">Buenos Aires &amp; CABA</option>
@@ -695,12 +695,12 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                           </span>
                         </div>
 
-                        <h4 className="text-sm font-black text-white group-hover:text-[#7ED957] transition-colors leading-snug">
+                        <h4 className="text-sm font-black text-white group-hover:text-[#A4D902] transition-colors leading-snug">
                           {spot.name}
                         </h4>
 
                         <div className="flex items-start gap-1.5 mt-1 text-[11px] text-emerald-100/70">
-                          <MapPin className="w-3.5 h-3.5 text-[#FFE600] shrink-0 mt-0.5" />
+                          <MapPin className="w-3.5 h-3.5 text-[#A4D902] shrink-0 mt-0.5" />
                           <span className="line-clamp-1">{spot.location}</span>
                         </div>
 
@@ -710,8 +710,8 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                       </div>
 
                       <div className="mt-3 pt-2.5 border-t border-white/10 flex items-center justify-between text-[11px]">
-                        <span className="text-[#FFE600] font-bold">Ver cómo jugar</span>
-                        <ArrowRight className="w-3.5 h-3.5 text-[#7ED957] group-hover:translate-x-1 transition-transform" />
+                        <span className="text-[#A4D902] font-bold">Ver cómo jugar</span>
+                        <ArrowRight className="w-3.5 h-3.5 text-[#A4D902] group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
                   ))
@@ -721,9 +721,9 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
 
             {/* Right 4 Cols: Mascot Message & Arcade Guide */}
             <div className="lg:col-span-4 flex flex-col items-center">
-              <div className="w-full relative p-6 sm:p-7 rounded-3xl bg-white dark:bg-[#071F0F] text-[#05421A] dark:text-[#E8F8EC] shadow-2xl border-4 border-[#05421A] dark:border-emerald-600 flex flex-col items-center">
+              <div className="w-full relative p-6 sm:p-7 rounded-3xl bg-white dark:bg-[#071F0F] text-[#01592A] dark:text-[#F1F6D5] shadow-2xl border-4 border-[#01592A] dark:border-emerald-600 flex flex-col items-center">
                 {/* 90s Badge */}
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-sm bg-[#FFE600] text-black font-mono text-[10px] font-black tracking-widest uppercase border border-black/20">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-sm bg-[#A4D902] text-black font-mono text-[10px] font-black tracking-widest uppercase border border-black/20">
                   FILOSOFÍA ARCADE • FIDO DIDO
                 </div>
 
@@ -734,10 +734,10 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
 
                 {/* Speech Card */}
                 <div className="mt-2 p-3 rounded-2xl bg-emerald-50 dark:bg-[#0C2A15] border border-emerald-200 dark:border-emerald-700/60 text-center w-full">
-                  <span className="text-[10px] font-mono uppercase tracking-wider text-[#008B3E] dark:text-[#50E528] font-bold block">
+                  <span className="text-[10px] font-mono uppercase tracking-wider text-[#01592A] dark:text-[#A4D902] font-bold block">
                     MENSAJE DE FIDO DIDO
                   </span>
-                  <p className="text-xs font-bold text-[#05421A] dark:text-[#E8F8EC] mt-1 leading-relaxed">
+                  <p className="text-xs font-bold text-[#01592A] dark:text-[#F1F6D5] mt-1 leading-relaxed">
                     &ldquo;Los clásicos no se juegan en un teclado. Se juegan parado frente a la máquina, con palanca de fierro, botones de verdad y un 7UP helado al lado.&rdquo;
                   </p>
                 </div>
@@ -745,11 +745,11 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                 {/* 3 Steps Guide for Arcade */}
                 <div className="w-full mt-4 pt-3 border-t border-emerald-100 dark:border-emerald-800/60 flex flex-col gap-2.5 text-xs text-left">
                   <div className="flex items-start gap-2">
-                    <div className="w-5 h-5 rounded-full bg-[#008B3E] text-white font-mono text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-5 h-5 rounded-full bg-[#01592A] text-white font-mono text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5">
                       1
                     </div>
                     <div>
-                      <strong className="block text-[#05421A] dark:text-white">Llevá tu lata o tapita 7UP</strong>
+                      <strong className="block text-[#01592A] dark:text-white">Llevá tu lata o tapita 7UP</strong>
                       <span className="text-emerald-900/70 dark:text-emerald-300/70 text-[11px]">
                         En Sacoa y eventos sponsor te acreditan fichas bonus en boletería.
                       </span>
@@ -757,11 +757,11 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   </div>
 
                   <div className="flex items-start gap-2">
-                    <div className="w-5 h-5 rounded-full bg-[#008B3E] text-white font-mono text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-5 h-5 rounded-full bg-[#01592A] text-white font-mono text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5">
                       2
                     </div>
                     <div>
-                      <strong className="block text-[#05421A] dark:text-white">Jugá los 5 niveles completos</strong>
+                      <strong className="block text-[#01592A] dark:text-white">Jugá los 5 niveles completos</strong>
                       <span className="text-emerald-900/70 dark:text-emerald-300/70 text-[11px]">
                         Superá Buenos Aires, Rosario, Córdoba, la Costa y la Fábrica Secreta.
                       </span>
@@ -769,11 +769,11 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   </div>
 
                   <div className="flex items-start gap-2">
-                    <div className="w-5 h-5 rounded-full bg-[#008B3E] text-white font-mono text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-5 h-5 rounded-full bg-[#01592A] text-white font-mono text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5">
                       3
                     </div>
                     <div>
-                      <strong className="block text-[#05421A] dark:text-white">Grabá tus 3 iniciales en el High Score</strong>
+                      <strong className="block text-[#01592A] dark:text-white">Grabá tus 3 iniciales en el High Score</strong>
                       <span className="text-emerald-900/70 dark:text-emerald-300/70 text-[11px]">
                         El Top 10 del mes gana camperas retro Fido Dido y 7UP gratis por un año.
                       </span>
@@ -786,7 +786,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   <button
                     type="button"
                     onClick={() => onNavigate('productos')}
-                    className="w-full py-3 px-4 rounded-full bg-[#008B3E] hover:bg-[#007333] text-white font-black text-xs uppercase tracking-wider shadow-md transition-all cursor-pointer flex items-center justify-center gap-2"
+                    className="w-full py-3 px-4 rounded-full bg-[#01592A] hover:bg-[#01592A] text-white font-black text-xs uppercase tracking-wider shadow-md transition-all cursor-pointer flex items-center justify-center gap-2"
                   >
                     <MapPin className="w-4 h-4" />
                     <span>Ver Mapa de Puntos 7UP</span>
@@ -795,9 +795,9 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   <button
                     type="button"
                     onClick={handleClaimTokensInfo}
-                    className="w-full py-2.5 px-4 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-[#05421A] dark:text-emerald-100 font-bold text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-1.5"
+                    className="w-full py-2.5 px-4 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-[#01592A] dark:text-emerald-100 font-bold text-xs uppercase tracking-wider transition-all cursor-pointer flex items-center justify-center gap-1.5"
                   >
-                    <Coins className="w-3.5 h-3.5 text-[#008B3E] dark:text-[#7ED957]" />
+                    <Coins className="w-3.5 h-3.5 text-[#01592A] dark:text-[#A4D902]" />
                     <span>Reglamento de Fichas</span>
                   </button>
                 </div>
@@ -817,7 +817,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative w-full max-w-lg p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#082010] text-[#05421A] dark:text-[#E8F8EC] border-4 border-[#008B3E] dark:border-emerald-500 shadow-2xl overflow-hidden"
+              className="relative w-full max-w-lg p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#082010] text-[#01592A] dark:text-[#F1F6D5] border-4 border-[#01592A] dark:border-emerald-500 shadow-2xl overflow-hidden"
             >
               {/* Close button */}
               <button
@@ -843,18 +843,18 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-black text-[#05421A] dark:text-[#E8F8EC] leading-tight">
+                <h3 className="text-2xl font-black text-[#01592A] dark:text-[#F1F6D5] leading-tight">
                   {selectedSpotModal.name}
                 </h3>
 
                 <div className="flex items-center gap-2 text-xs text-emerald-900/80 dark:text-emerald-200/80 mt-2">
-                  <MapPin className="w-4 h-4 text-[#E51E2B] shrink-0" />
+                  <MapPin className="w-4 h-4 text-[#F2081B] shrink-0" />
                   <span className="font-bold">{selectedSpotModal.location}</span>
                 </div>
 
                 <div className="mt-4 p-4 rounded-2xl bg-emerald-50 dark:bg-[#0C2A15] border border-emerald-200 dark:border-emerald-700/60 flex flex-col gap-2.5 text-xs">
                   <div>
-                    <strong className="text-[#05421A] dark:text-emerald-200 block text-[11px] uppercase tracking-wider">
+                    <strong className="text-[#01592A] dark:text-emerald-200 block text-[11px] uppercase tracking-wider">
                       🕹️ Hardware &amp; Gabinete:
                     </strong>
                     <span className="text-emerald-950/80 dark:text-emerald-100 font-medium">
@@ -863,7 +863,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   </div>
 
                   <div>
-                    <strong className="text-[#05421A] dark:text-emerald-200 block text-[11px] uppercase tracking-wider">
+                    <strong className="text-[#01592A] dark:text-emerald-200 block text-[11px] uppercase tracking-wider">
                       ⭐ Beneficio / Promoción 7UP:
                     </strong>
                     <span className="text-emerald-950/80 dark:text-emerald-100 font-medium">
@@ -872,7 +872,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   </div>
 
                   <div>
-                    <strong className="text-[#05421A] dark:text-emerald-200 block text-[11px] uppercase tracking-wider">
+                    <strong className="text-[#01592A] dark:text-emerald-200 block text-[11px] uppercase tracking-wider">
                       🪙 Fichas y Créditos:
                     </strong>
                     <span className="text-emerald-950/80 dark:text-emerald-100 font-medium">
@@ -881,7 +881,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   </div>
 
                   <div>
-                    <strong className="text-[#05421A] dark:text-emerald-200 block text-[11px] uppercase tracking-wider">
+                    <strong className="text-[#01592A] dark:text-emerald-200 block text-[11px] uppercase tracking-wider">
                       🕒 Horarios de Atención:
                     </strong>
                     <span className="text-emerald-950/80 dark:text-emerald-100 font-medium">
@@ -898,7 +898,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                   <button
                     type="button"
                     onClick={() => setSelectedSpotModal(null)}
-                    className="flex-1 py-3 px-4 rounded-full bg-[#008B3E] hover:bg-[#007333] text-white font-black text-xs uppercase tracking-wider shadow-md transition-all cursor-pointer text-center"
+                    className="flex-1 py-3 px-4 rounded-full bg-[#01592A] hover:bg-[#01592A] text-white font-black text-xs uppercase tracking-wider shadow-md transition-all cursor-pointer text-center"
                   >
                     ¡Entendido, voy a jugar ahí!
                   </button>
@@ -910,7 +910,7 @@ export const Game: React.FC<GameProps> = ({ onNavigate }) => {
                         setSelectedSpotModal(null);
                         onNavigate('productos');
                       }}
-                      className="py-3 px-4 rounded-full bg-emerald-100 dark:bg-emerald-900/60 hover:bg-emerald-200 dark:hover:bg-emerald-800/60 text-[#05421A] dark:text-emerald-100 font-bold text-xs uppercase transition-colors cursor-pointer text-center"
+                      className="py-3 px-4 rounded-full bg-emerald-100 dark:bg-emerald-900/60 hover:bg-emerald-200 dark:hover:bg-emerald-800/60 text-[#01592A] dark:text-emerald-100 font-bold text-xs uppercase transition-colors cursor-pointer text-center"
                     >
                       Ver en Mapa Rosario
                     </button>

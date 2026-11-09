@@ -1,12 +1,41 @@
 @import "tailwindcss";
-
 @custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  color-scheme: dark light;
+/* The six brand colors are the base; translucent shades derive from them. */
+@theme {
+  --color-brand-red: #F2081B;
+  --color-brand-lime: #A4D902;
+  --color-brand-forest: #01592A;
+  --color-brand-green: #029F3D;
+  --color-brand-cream: #F1F6D5;
+  --color-brand-white: #FFFFFF;
+  --color-emerald-50: #F1F6D5;
+  --color-emerald-100: color-mix(in srgb, #F1F6D5 80%, #A4D902);
+  --color-emerald-200: color-mix(in srgb, #F1F6D5 65%, #029F3D);
+  --color-emerald-300: color-mix(in srgb, #F1F6D5 40%, #029F3D);
+  --color-emerald-400: #A4D902;
+  --color-emerald-500: #029F3D;
+  --color-emerald-600: #01592A;
+  --color-emerald-700: #01592A;
+  --color-emerald-800: #01592A;
+  --color-emerald-900: #01592A;
+  --color-emerald-950: #01592A;
+  --color-green-50: #F1F6D5;
+  --color-green-100: #F1F6D5;
+  --color-green-400: #A4D902;
+  --color-green-500: #029F3D;
+  --color-green-600: #01592A;
+  --color-green-700: #01592A;
+  --color-green-800: #01592A;
+  --color-green-900: #01592A;
+  --color-lime-300: #A4D902;
+  --color-lime-400: #A4D902;
+  --color-yellow-300: #A4D902;
+  --color-yellow-400: #A4D902;
+  --color-yellow-500: #A4D902;
+  --color-red-500: #F2081B;
+  --color-red-600: #F2081B;
 }
-
-html.dark {
-  background-color: #061208;
-  color: #E4F2E7;
-}
+:root { color-scheme: light; background: #F1F6D5; color: #01592A; }
+html.dark { color-scheme: dark; background: #061208; color: #F1F6D5; }
+::selection { background: #A4D902; color: #01592A; }

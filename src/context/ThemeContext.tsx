@@ -6,30 +6,21 @@ interface ThemeContextType {
 }
 
 const ThemeContext = createContext<ThemeContextType>({
-  isDark: true,
+  isDark: false,
   toggleTheme: () => {},
 });
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [isDark, setIsDark] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('7up-theme');
-      if (saved !== null) {
-        return saved === 'dark';
-      }
-    }
-    // Default to true (Modo Nocturno)
-    return true;
-  });
+  // Every fresh page load starts light; the toggle applies to this visit.
+  const [isDark, setIsDark] = useState<boolean>(false);
 
   useEffect(() => {
     const root = document.documentElement;
+    root.style.colorScheme = isDark ? 'dark' : 'light';
     if (isDark) {
       root.classList.add('dark');
-      localStorage.setItem('7up-theme', 'dark');
     } else {
       root.classList.remove('dark');
-      localStorage.setItem('7up-theme', 'light');
     }
   }, [isDark]);
 

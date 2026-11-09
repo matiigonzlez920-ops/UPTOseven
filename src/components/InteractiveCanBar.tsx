@@ -66,13 +66,13 @@ export const InteractiveCanBar: React.FC<InteractiveCanBarProps> = ({
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E51E2B] text-white text-xs font-black tracking-wider uppercase shadow-sm mb-3"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F2081B] text-white text-xs font-black tracking-wider uppercase shadow-sm mb-3"
         >
           <Sparkles className="w-4 h-4" />
           <span>CATÁLOGO DE PRODUCTOS 7UP</span>
         </motion.div>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#05421A] dark:text-[#E8F8EC] tracking-tight uppercase">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#01592A] dark:text-[#F1F6D5] tracking-tight uppercase">
           NUESTROS PRODUCTOS Y SABORES
         </h2>
 
@@ -95,7 +95,7 @@ export const InteractiveCanBar: React.FC<InteractiveCanBarProps> = ({
                 onClick={() => handleSelectProduct(prod)}
                 className={`relative flex flex-col items-center justify-between p-3.5 sm:p-4 rounded-2xl sm:rounded-3xl border text-left transition-all duration-300 cursor-pointer ${
                   isSelected
-                    ? 'bg-white dark:bg-[#0F2D18] border-2 border-[#008B3E] ring-4 ring-[#7ED957]/30 dark:ring-[#7ED957]/20 shadow-lg scale-[1.02]'
+                    ? 'bg-white dark:bg-[#0F2D18] border-2 border-[#01592A] ring-4 ring-[#A4D902]/30 dark:ring-[#A4D902]/20 shadow-lg scale-[1.02]'
                     : 'bg-white/80 dark:bg-[#0A1F10]/80 hover:bg-white dark:hover:bg-[#0E2816] border-emerald-100 dark:border-emerald-800/60 hover:border-emerald-300 dark:hover:border-emerald-600/60 shadow-xs hover:shadow-md'
                 }`}
               >
@@ -127,17 +127,17 @@ export const InteractiveCanBar: React.FC<InteractiveCanBarProps> = ({
 
                 {/* Name & Calories */}
                 <div className="w-full text-center mt-1 z-10">
-                  <span className="block text-xs sm:text-sm font-black text-[#05421A] dark:text-[#E8F8EC] truncate">
+                  <span className="block text-xs sm:text-sm font-black text-[#01592A] dark:text-[#F1F6D5] truncate">
                     {prod.name}
                   </span>
-                  <span className="text-[10px] text-[#008B3E] dark:text-[#7ED957] font-bold block truncate">
+                  <span className="text-[10px] text-[#01592A] dark:text-[#A4D902] font-bold block truncate">
                     {prod.calories}
                   </span>
                 </div>
 
                 {/* Active Indicator Arrow pointing to showcase */}
                 {isSelected && (
-                  <div className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-4 h-4 bg-white dark:bg-[#0F2D18] border-b-2 border-r-2 border-[#008B3E] rotate-45 z-20" />
+                  <div className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-4 h-4 bg-white dark:bg-[#0F2D18] border-b-2 border-r-2 border-[#01592A] rotate-45 z-20" />
                 )}
               </button>
             );
@@ -157,7 +157,7 @@ export const InteractiveCanBar: React.FC<InteractiveCanBarProps> = ({
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-emerald-100 dark:border-emerald-800/50">
           <div>
             <div className="flex items-center gap-2.5">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#05421A] dark:text-[#E8F8EC] tracking-tight">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#01592A] dark:text-[#F1F6D5] tracking-tight">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={activeProduct.id}
@@ -178,7 +178,7 @@ export const InteractiveCanBar: React.FC<InteractiveCanBarProps> = ({
                 {activeProduct.badge}
               </span>
             </div>
-            <p className="text-xs sm:text-sm font-bold text-[#008B3E] dark:text-[#50E528] mt-1 transition-opacity duration-300">
+            <p className="text-xs sm:text-sm font-bold text-[#01592A] dark:text-[#A4D902] mt-1 transition-opacity duration-300">
               {activeProduct.tagline}
             </p>
           </div>
@@ -255,7 +255,7 @@ export const InteractiveCanBar: React.FC<InteractiveCanBarProps> = ({
                 <span className="text-[11px] uppercase font-extrabold tracking-wider text-emerald-800 dark:text-emerald-300">
                   Calorías
                 </span>
-                <div className="text-3xl sm:text-4xl font-black text-[#05421A] dark:text-[#E8F8EC] mt-0.5 overflow-hidden">
+                <div className="text-3xl sm:text-4xl font-black text-[#01592A] dark:text-[#F1F6D5] mt-0.5 overflow-hidden">
                   <AnimatePresence mode="wait">
                     <motion.span
                       key={activeProduct.id + '-cal'}
@@ -275,7 +275,7 @@ export const InteractiveCanBar: React.FC<InteractiveCanBarProps> = ({
                 <span className="text-[11px] uppercase font-extrabold tracking-wider text-emerald-800 dark:text-emerald-300">
                   Para porción
                 </span>
-                <div className="text-sm sm:text-base font-black text-[#008B3E] dark:text-[#50E528] mt-0.5">
+                <div className="text-sm sm:text-base font-black text-[#01592A] dark:text-[#A4D902] mt-0.5">
                   {activeProduct.servingSize || '12.00 fl oz (355 ml)'}
                 </div>
               </div>
@@ -318,7 +318,7 @@ export const InteractiveCanBar: React.FC<InteractiveCanBarProps> = ({
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -3 }}
                           transition={{ duration: 0.18 }}
-                          className="font-bold text-[#008B3E] dark:text-[#50E528] ml-1.5 inline-block"
+                          className="font-bold text-[#01592A] dark:text-[#A4D902] ml-1.5 inline-block"
                         >
                           {row.amount}
                         </motion.span>
@@ -350,7 +350,7 @@ export const InteractiveCanBar: React.FC<InteractiveCanBarProps> = ({
             {/* Ingredients Block: Permanent card container, smooth text transition */}
             <div className="bg-emerald-50/50 dark:bg-[#0B2011] border border-emerald-200/70 dark:border-emerald-700/50 rounded-2xl p-5">
               <h4 className="text-xs font-black uppercase tracking-wider text-emerald-900 dark:text-emerald-200 mb-2 flex items-center gap-1.5">
-                <Info className="w-4 h-4 text-emerald-700 dark:text-[#50E528]" />
+                <Info className="w-4 h-4 text-emerald-700 dark:text-[#A4D902]" />
                 <span>Ingredientes</span>
               </h4>
               <div className="min-h-[52px]">

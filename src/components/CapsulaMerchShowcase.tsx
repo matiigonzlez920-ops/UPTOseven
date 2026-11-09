@@ -20,11 +20,11 @@ export const CapsulaMerchShowcase: React.FC = () => {
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
         <div>
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFE600] text-[#00471C] text-xs font-black uppercase tracking-wider mb-2">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#A4D902] text-[#01592A] text-xs font-black uppercase tracking-wider mb-2">
             <Sparkles className="w-3 h-3 fill-current" />
             CONTENIDO DE LA CÁPSULA
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black text-[#05421A] dark:text-[#E8F8EC] tracking-tight uppercase">
+          <h2 className="text-3xl sm:text-4xl font-black text-[#01592A] dark:text-[#F1F6D5] tracking-tight uppercase">
             ROPA & MERCH EDICIÓN LIMITADA
           </h2>
           <p className="text-sm sm:text-base text-emerald-900/80 dark:text-emerald-200/80 font-medium mt-1 max-w-2xl">
@@ -44,7 +44,7 @@ export const CapsulaMerchShowcase: React.FC = () => {
               }}
               className={`px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider transition-all ${
                 activeCategory === cat
-                  ? 'bg-[#008B3E] text-white shadow-xs'
+                  ? 'bg-[#01592A] text-white shadow-xs'
                   : 'text-emerald-900 dark:text-emerald-200 hover:bg-white/50 dark:hover:bg-emerald-800/40'
               }`}
             >
@@ -63,7 +63,7 @@ export const CapsulaMerchShowcase: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             whileHover={{ y: -6 }}
-            className="bg-white dark:bg-[#0A1F10] rounded-3xl p-5 border-2 border-emerald-100 dark:border-emerald-800/60 hover:border-[#008B3E] dark:hover:border-emerald-500 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group"
+            className="bg-white dark:bg-[#0A1F10] rounded-3xl p-5 border-2 border-emerald-100 dark:border-emerald-800/60 hover:border-[#01592A] dark:hover:border-emerald-500 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group"
           >
             <div>
               {/* Image Container with Badges */}
@@ -76,7 +76,7 @@ export const CapsulaMerchShowcase: React.FC = () => {
                     : 'w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'}
                 />
                 <div className="absolute top-2 left-2">
-                  <span className="px-2.5 py-1 rounded-full bg-[#008B3E] text-white text-[10px] font-black uppercase tracking-wider shadow-xs">
+                  <span className="px-2.5 py-1 rounded-full bg-[#01592A] text-white text-[10px] font-black uppercase tracking-wider shadow-xs">
                     {item.badge}
                   </span>
                 </div>
@@ -89,12 +89,12 @@ export const CapsulaMerchShowcase: React.FC = () => {
 
               {/* Info */}
               <div className="flex items-center gap-2 mb-1">
-                <span className="text-[11px] font-black uppercase tracking-wider text-emerald-700 dark:text-[#50E528]">
+                <span className="text-[11px] font-black uppercase tracking-wider text-emerald-700 dark:text-[#A4D902]">
                   {item.category}
                 </span>
               </div>
 
-              <h3 className="text-base font-black text-[#05421A] dark:text-[#E8F8EC] leading-snug group-hover:text-[#008B3E] dark:group-hover:text-[#50E528] transition-colors">
+              <h3 className="text-base font-black text-[#01592A] dark:text-[#F1F6D5] leading-snug group-hover:text-[#01592A] dark:group-hover:text-[#A4D902] transition-colors">
                 {item.name}
               </h3>
 
@@ -108,7 +108,7 @@ export const CapsulaMerchShowcase: React.FC = () => {
               <div className="text-[10px] font-mono font-bold text-neutral-500 dark:text-emerald-300/60">
                 {item.sizes ? item.sizes.join(' • ') : 'Talle Único'}
               </div>
-              <div className="w-6 h-6 rounded-full bg-emerald-50 dark:bg-emerald-900/50 text-[#008B3E] dark:text-[#50E528] flex items-center justify-center font-bold text-xs group-hover:bg-[#008B3E] group-hover:text-white transition-colors">
+              <div className="w-6 h-6 rounded-full bg-emerald-50 dark:bg-emerald-900/50 text-[#01592A] dark:text-[#A4D902] flex items-center justify-center font-bold text-xs group-hover:bg-[#01592A] group-hover:text-white transition-colors">
                 <Package className="w-3.5 h-3.5" />
               </div>
             </div>

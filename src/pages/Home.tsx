@@ -54,14 +54,14 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-[#05421A] dark:text-[#E8F8EC] tracking-[0.02em] font-['Fira_Sans',sans-serif]"
+              className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black text-[#01592A] dark:text-[#F1F6D5] tracking-[0.02em] font-['Fira_Sans',sans-serif]"
               style={{ fontFamily: "'Fira Sans', sans-serif", letterSpacing: '0.02em', lineHeight: '91.88px' }}
             >
               SIENTE EL FRESCOR
               <br />
-              <span className="text-[#008B3E] dark:text-[#25D366] relative inline-block">
+              <span className="text-[#01592A] dark:text-[#029F3D] relative inline-block">
                 QUE TE DESPIERTA.
-                <span className="absolute -bottom-1.5 left-0 w-full h-3 sm:h-4 bg-[#7ED957]/50 dark:bg-[#7ED957]/30 rounded-full -z-10" />
+                <span className="absolute -bottom-1.5 left-0 w-full h-3 sm:h-4 bg-[#A4D902]/50 dark:bg-[#A4D902]/30 rounded-full -z-10" />
               </span>
             </motion.h1>
 
@@ -87,7 +87,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                 type="button"
                 id="hero-cta-history"
                 onClick={() => handleNav('historia')}
-                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full font-bold text-base sm:text-lg text-[#05421A] dark:text-[#E8F8EC] bg-white dark:bg-[#0D2614] hover:bg-emerald-50 dark:hover:bg-[#16381F] border-2 border-emerald-200/90 dark:border-emerald-700/60 shadow-sm hover:shadow-md transition-all hover:scale-105 active:scale-95"
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full font-bold text-base sm:text-lg text-[#01592A] dark:text-[#F1F6D5] bg-white dark:bg-[#0D2614] hover:bg-emerald-50 dark:hover:bg-[#16381F] border-2 border-emerald-200/90 dark:border-emerald-700/60 shadow-sm hover:shadow-md transition-all hover:scale-105 active:scale-95"
               >
                 <Clock className="w-5 h-5 text-emerald-700 dark:text-emerald-400" />
                 <span>CONOCER LA HISTORIA</span>
@@ -139,13 +139,13 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           CÁPSULA 7UP STREETWEAR & DISPENSERS EN ROSARIO
           =================================================== */}
       <section id="capsula-home-highlight" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="bg-linear-to-r from-[#004A1F] via-[#00662D] to-[#013B17] rounded-3xl p-6 sm:p-10 border-2 border-[#7ED957]/50 shadow-2xl text-white relative overflow-hidden">
+        <div className="bg-linear-to-r from-[#01592A] via-[#01592A] to-[#01592A] rounded-3xl p-6 sm:p-10 border-2 border-[#A4D902]/50 shadow-2xl text-white relative overflow-hidden">
           {/* Ambient light */}
-          <div className="absolute top-0 right-0 w-80 h-80 bg-[#FFE600]/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 w-80 h-80 bg-[#A4D902]/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFE600] text-[#00471C] text-xs font-black uppercase tracking-wider mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#A4D902] text-[#01592A] text-xs font-black uppercase tracking-wider mb-3">
                 <MapPin className="w-3.5 h-3.5" />
                 <span>EXCLUSIVO ROSARIO, SANTA FE • DISPENSER DE GASEOSA</span>
               </div>
@@ -162,9 +162,9 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                   type="button"
                   id="home-capsula-cta-btn"
                   onClick={() => handleNav('productos')}
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-black text-sm text-[#00471C] bg-[#FFE600] hover:bg-[#F2D700] shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-black text-sm text-[#01592A] bg-[#A4D902] hover:bg-[#A4D902] shadow-lg hover:shadow-xl transition-all hover:scale-105 active:scale-95"
                 >
-                  <Package className="w-4 h-4 text-[#00471C]" />
+                  <Package className="w-4 h-4 text-[#01592A]" />
                   <span>VER PUNTOS Y SIMULAR DISPENSER</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
@@ -195,8 +195,8 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           =================================================== */}
       <section id="closing-home-section" className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
         <div className="flex flex-col items-center gap-4">
-          <div className="w-12 h-1.5 rounded-full bg-[#E51E2B]" />
-          <h3 className="text-2xl sm:text-3xl font-black text-[#05421A] dark:text-[#E8F8EC] tracking-tight">
+          <div className="w-12 h-1.5 rounded-full bg-[#F2081B]" />
+          <h3 className="text-2xl sm:text-3xl font-black text-[#01592A] dark:text-[#F1F6D5] tracking-tight">
             Las épocas cambian. La frescura permanece.
           </h3>
           <p className="text-sm text-emerald-950/70 dark:text-emerald-200/70 max-w-lg leading-relaxed">

@@ -20,9 +20,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   };
 
   return (
-    <footer id="global-footer" className="relative bg-[#05421A] dark:bg-[#031509] text-white pt-16 pb-12 overflow-hidden border-t border-transparent dark:border-emerald-950">
+    <footer id="global-footer" className="relative bg-[#01592A] dark:bg-[#031509] text-white pt-16 pb-12 overflow-hidden border-t border-transparent dark:border-emerald-950">
       {/* Decorative Wave Accent at Top */}
-      <div className="absolute top-0 left-0 right-0 h-3 bg-linear-to-r from-[#7ED957] via-[#25C44B] to-[#FFE600]" />
+      <div className="absolute top-0 left-0 right-0 h-3 bg-linear-to-r from-[#A4D902] via-[#029F3D] to-[#A4D902]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-emerald-900/80 dark:border-emerald-950">
@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               Explorando el universo cítrico de 7UP desde 1929. Auténtica frescura de limón y lima que despierta los sentidos y trasciende generaciones.
             </p>
 
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-900/60 dark:bg-emerald-950/80 border border-emerald-700/50 dark:border-emerald-800/50 text-xs font-semibold text-[#7ED957]">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-900/60 dark:bg-emerald-950/80 border border-emerald-700/50 dark:border-emerald-800/50 text-xs font-semibold text-[#A4D902]">
               <Sparkles className="w-3.5 h-3.5" />
               <span>Frescura 100% Cítrica • Sin Cafeína</span>
             </div>
@@ -48,7 +48,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Navigation Links */}
           <div className="md:col-span-4 flex flex-col gap-3">
-            <span className="text-xs font-black uppercase tracking-widest text-[#7ED957]">
+            <span className="text-xs font-black uppercase tracking-widest text-[#A4D902]">
               Explorar el Sitio
             </span>
             <div className="flex flex-col gap-2">
@@ -72,7 +72,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 className="text-left text-sm text-emerald-100 hover:text-white transition-colors flex items-center gap-2"
               >
                 <span>La Época (Historia Scrollytelling)</span>
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#E51E2B] text-white font-bold">
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#F2081B] text-white font-bold">
                   Destacado
                 </span>
               </button>
@@ -82,7 +82,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 className="text-left text-sm text-emerald-100 hover:text-white transition-colors flex items-center gap-2"
               >
                 <span>7UP Arcade (Juego Cítrico)</span>
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#50E528] text-[#00471c] font-bold">
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#A4D902] text-[#01592A] font-bold">
                   Arcade
                 </span>
               </button>

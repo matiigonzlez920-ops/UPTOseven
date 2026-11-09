@@ -68,11 +68,11 @@ export const Products: React.FC<ProductsProps> = ({ onNavigate }) => {
           {/* Full-width Banner Hero Cápsula */}
           <section
             id="capsula-hero"
-            className="w-full relative overflow-hidden bg-linear-to-r from-[#013816] via-[#005724] to-[#012f12] text-white py-12 sm:py-16 lg:py-20 shadow-xl border-b-4 border-[#7ED957]"
+            className="w-full relative overflow-hidden bg-linear-to-r from-[#01592A] via-[#01592A] to-[#01592A] text-white py-12 sm:py-16 lg:py-20 shadow-xl border-b-4 border-[#A4D902]"
           >
             {/* Ambient decorative glow and patterns */}
-            <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#FFE600]/10 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-20 -left-20 w-[600px] h-[600px] bg-[#7ED957]/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#A4D902]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-20 -left-20 w-[600px] h-[600px] bg-[#A4D902]/15 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -81,7 +81,7 @@ export const Products: React.FC<ProductsProps> = ({ onNavigate }) => {
                 <div className="lg:col-span-6 flex flex-col text-left">
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.05] drop-shadow-md">
                     DISPENSER 7UP: <br />
-                    <span className="text-[#FFE600]">CÁPSULA EXCLUSIVA</span>
+                    <span className="text-[#A4D902]">CÁPSULA EXCLUSIVA</span>
                   </h1>
 
                   <p className="text-lg sm:text-xl text-emerald-100 font-medium mt-5 leading-relaxed max-w-2xl">
@@ -135,7 +135,7 @@ export const Products: React.FC<ProductsProps> = ({ onNavigate }) => {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-4xl sm:text-6xl font-black text-[#05421A] dark:text-[#E8F8EC] tracking-tight uppercase"
+              className="text-4xl sm:text-6xl font-black text-[#01592A] dark:text-[#F1F6D5] tracking-tight uppercase"
             >
               PRODUCTOS Y SABORES
             </motion.h1>
@@ -144,7 +144,7 @@ export const Products: React.FC<ProductsProps> = ({ onNavigate }) => {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-lg sm:text-xl font-extrabold text-[#008B3E] dark:text-[#25D366] max-w-xl mx-auto mt-2 uppercase tracking-wide"
+              className="text-lg sm:text-xl font-extrabold text-[#01592A] dark:text-[#029F3D] max-w-xl mx-auto mt-2 uppercase tracking-wide"
             >
               LA FRESCURA EN TODAS SUS FORMAS.
             </motion.p>
@@ -182,7 +182,7 @@ export const Products: React.FC<ProductsProps> = ({ onNavigate }) => {
                     onClick={() => handleCanClick(product.id)}
                     className={`relative rounded-3xl p-6 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden border-2 ${
                       isSelected
-                        ? 'border-[#008B3E] bg-white dark:bg-[#0F2D18] shadow-xl scale-[1.02]'
+                        ? 'border-[#01592A] bg-white dark:bg-[#0F2D18] shadow-xl scale-[1.02]'
                         : 'border-emerald-100 dark:border-emerald-800/60 bg-white/80 dark:bg-[#0A1F10]/80 hover:bg-white dark:hover:bg-[#0E2816] hover:border-emerald-300 dark:hover:border-emerald-600/60 shadow-sm'
                     }`}
                   >
@@ -200,8 +200,8 @@ export const Products: React.FC<ProductsProps> = ({ onNavigate }) => {
                         onClick={(e) => toggleLike(product.id, e)}
                         className={`p-1.5 rounded-full transition-colors ${
                           isLiked
-                            ? 'text-[#E51E2B] bg-red-50'
-                            : 'text-neutral-400 hover:text-[#E51E2B] hover:bg-neutral-100'
+                            ? 'text-[#F2081B] bg-red-50'
+                            : 'text-neutral-400 hover:text-[#F2081B] hover:bg-neutral-100'
                         }`}
                         aria-label="Me gusta"
                       >
@@ -224,10 +224,10 @@ export const Products: React.FC<ProductsProps> = ({ onNavigate }) => {
 
                     {/* Bottom Info */}
                     <div className="z-10 text-left">
-                      <h3 className="text-xl font-black text-[#05421A] dark:text-[#E8F8EC] leading-tight">
+                      <h3 className="text-xl font-black text-[#01592A] dark:text-[#F1F6D5] leading-tight">
                         {product.name}
                       </h3>
-                      <p className="text-xs font-bold text-[#008B3E] dark:text-[#50E528] mt-0.5">
+                      <p className="text-xs font-bold text-[#01592A] dark:text-[#A4D902] mt-0.5">
                         {product.tagline}
                       </p>
                       <p className="text-xs text-neutral-600 dark:text-emerald-200/70 mt-2 line-clamp-2 leading-relaxed">
@@ -317,10 +317,10 @@ export const Products: React.FC<ProductsProps> = ({ onNavigate }) => {
           =================================================== */}
       <section id="products-history-cta" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
         <div className="p-8 sm:p-12 rounded-3xl bg-emerald-50 dark:bg-[#091F0E] border border-emerald-200/80 dark:border-emerald-800/60 flex flex-col items-center gap-4 shadow-sm">
-          <span className="text-xs font-black uppercase tracking-widest text-[#008B3E] dark:text-[#50E528]">
+          <span className="text-xs font-black uppercase tracking-widest text-[#01592A] dark:text-[#A4D902]">
             UN VIAJE EN EL TIEMPO
           </span>
-          <h3 className="text-2xl sm:text-4xl font-black text-[#05421A] dark:text-[#E8F8EC] tracking-tight">
+          <h3 className="text-2xl sm:text-4xl font-black text-[#01592A] dark:text-[#F1F6D5] tracking-tight">
             ¿QUERÉS CONOCER LA HISTORIA DE 7UP?
           </h3>
           <p className="text-sm sm:text-base text-emerald-950/70 dark:text-emerald-200/80 max-w-lg leading-relaxed">
@@ -331,7 +331,7 @@ export const Products: React.FC<ProductsProps> = ({ onNavigate }) => {
             type="button"
             id="products-enter-history-btn"
             onClick={() => handleNav('historia')}
-            className="mt-2 inline-flex items-center gap-2.5 px-8 py-4 rounded-full font-black text-sm text-white bg-[#008B3E] hover:bg-[#007333] shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95"
+            className="mt-2 inline-flex items-center gap-2.5 px-8 py-4 rounded-full font-black text-sm text-white bg-[#01592A] hover:bg-[#01592A] shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95"
           >
             <span>ENTRAR EN LA ÉPOCA</span>
             <ArrowRight className="w-4 h-4" />

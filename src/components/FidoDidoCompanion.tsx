@@ -61,13 +61,13 @@ export const FidoDidoCompanion: React.FC<FidoDidoCompanionProps> = ({ onNavigate
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="mb-3 w-80 sm:w-96 p-5 rounded-3xl bg-white dark:bg-white text-[#05421A] dark:text-[#05421A] border-2 border-emerald-800/20 dark:border-emerald-800/30 shadow-2xl relative overflow-hidden"
+            className="mb-3 w-80 sm:w-96 p-5 rounded-3xl bg-white dark:bg-white text-[#01592A] dark:text-[#01592A] border-2 border-emerald-800/20 dark:border-emerald-800/30 shadow-2xl relative overflow-hidden"
           >
             {/* Top Bar with close button */}
             <div className="flex items-center justify-between pb-3 border-b border-emerald-100 dark:border-emerald-100">
               <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#E51E2B] animate-pulse" />
-                <span className="text-xs font-black tracking-wider uppercase text-[#008B3E]">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#F2081B] animate-pulse" />
+                <span className="text-xs font-black tracking-wider uppercase text-[#01592A]">
                   FIDO DIDO • FILOSOFÍA 90s
                 </span>
               </div>
@@ -89,7 +89,7 @@ export const FidoDidoCompanion: React.FC<FidoDidoCompanionProps> = ({ onNavigate
               </div>
 
               <div className="flex-1 flex flex-col justify-between min-h-[90px]">
-                <div className="relative p-3 rounded-2xl bg-emerald-50/80 border border-emerald-200/60 text-xs sm:text-sm font-medium leading-relaxed text-[#05421A] shadow-xs">
+                <div className="relative p-3 rounded-2xl bg-emerald-50/80 border border-emerald-200/60 text-xs sm:text-sm font-medium leading-relaxed text-[#01592A] shadow-xs">
                   {/* Triangle speech pointer */}
                   <div className="absolute top-5 -left-1.5 w-3 h-3 bg-emerald-50 border-b border-l border-emerald-200/60 rotate-45" />
                   &ldquo;{FIDO_QUOTES[quoteIndex]}&rdquo;
@@ -102,16 +102,16 @@ export const FidoDidoCompanion: React.FC<FidoDidoCompanionProps> = ({ onNavigate
                   <button
                     type="button"
                     onClick={handleNextQuote}
-                    className="text-[11px] font-black text-[#008B3E] hover:text-[#005928] flex items-center gap-1 underline decoration-2 underline-offset-2 cursor-pointer"
+                    className="text-[11px] font-black text-[#01592A] hover:text-[#01592A] flex items-center gap-1 underline decoration-2 underline-offset-2 cursor-pointer"
                   >
-                    <Sparkles className="w-3 h-3 text-[#E51E2B]" />
+                    <Sparkles className="w-3 h-3 text-[#F2081B]" />
                     <span>Otro consejo</span>
                   </button>
                 </div>
               </div>
             </div>
 
-            <p className="mt-3 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-xs leading-relaxed text-[#05421A]">
+            <p className="mt-3 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-xs leading-relaxed text-[#01592A]">
               Seguí bajando después de 2023 en Historia: hay un capítulo bloqueado por descubrir.
             </p>
 
@@ -120,7 +120,7 @@ export const FidoDidoCompanion: React.FC<FidoDidoCompanionProps> = ({ onNavigate
               <button
                 type="button"
                 onClick={handleGoToGame}
-                className="flex-1 py-2 px-3 rounded-xl bg-[#7ED957] hover:bg-[#6ecb47] text-[#05421A] font-black text-[11px] uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-xs transition-transform active:scale-95"
+                className="flex-1 py-2 px-3 rounded-xl bg-[#A4D902] hover:bg-[#A4D902] text-[#01592A] font-black text-[11px] uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-xs transition-transform active:scale-95"
               >
                 <Gamepad2 className="w-3.5 h-3.5" />
                 <span>Trailer &amp; Descarga</span>
@@ -129,7 +129,7 @@ export const FidoDidoCompanion: React.FC<FidoDidoCompanionProps> = ({ onNavigate
               <button
                 type="button"
                 onClick={handleGoToHistory}
-                className="py-2 px-3 rounded-xl bg-emerald-100/60 hover:bg-emerald-200/60 text-[#05421A] font-bold text-[11px] flex items-center gap-1 transition-colors"
+                className="py-2 px-3 rounded-xl bg-emerald-100/60 hover:bg-emerald-200/60 text-[#01592A] font-bold text-[11px] flex items-center gap-1 transition-colors"
               >
                 <span>Ver los 90s</span>
                 <ChevronRight className="w-3 h-3" />
@@ -147,7 +147,7 @@ export const FidoDidoCompanion: React.FC<FidoDidoCompanionProps> = ({ onNavigate
         whileTap={{ scale: 0.94 }}
         transition={{ type: 'spring', stiffness: 400, damping: 25 }}
         onClick={handleToggle}
-        className="pointer-events-auto relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white dark:bg-white hover:bg-[#F0FBF2] dark:hover:bg-neutral-100 border-2 sm:border-3 border-[#008B3E] dark:border-[#50E528] hover:border-[#7ED957] shadow-xl hover:shadow-2xl flex items-center justify-center p-2 sm:p-2.5 transition-colors cursor-pointer overflow-hidden"
+        className="pointer-events-auto relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white dark:bg-white hover:bg-[#F1F6D5] dark:hover:bg-neutral-100 border-2 sm:border-3 border-[#01592A] dark:border-[#A4D902] hover:border-[#A4D902] shadow-xl hover:shadow-2xl flex items-center justify-center p-2 sm:p-2.5 transition-colors cursor-pointer overflow-hidden"
         aria-label="Fido Dido"
       >
         <motion.img

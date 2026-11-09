@@ -53,20 +53,20 @@ export const FidoDidoSection: React.FC<FidoDidoSectionProps> = ({ onNavigate }) 
       {/* Background Retro Comic Halftone / Grid Pattern */}
       <div className="relative rounded-[36px] bg-linear-to-br from-[#042B12] via-[#02200D] to-[#011408] border-2 border-emerald-500/25 p-8 sm:p-14 overflow-hidden shadow-2xl">
         {/* Glow circles */}
-        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#7ED957]/15 blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[#E51E2B]/15 blur-3xl pointer-events-none" />
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#A4D902]/15 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[#F2081B]/15 blur-3xl pointer-events-none" />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center relative z-10">
           {/* Left Column (7 cols): Editorial & Rules */}
           <div className="lg:col-span-7 flex flex-col items-start gap-5 text-left text-white">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#E51E2B] text-white text-xs font-black tracking-widest uppercase shadow-md">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F2081B] text-white text-xs font-black tracking-widest uppercase shadow-md">
               <Smile className="w-3.5 h-3.5" />
               <span>ÍCONO DE LOS 90s • LA VOZ DE LA FRESCURA</span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
               FIDO DIDO: <br />
-              <span className="text-[#7ED957]">&ldquo;ESTÁ GENIAL SER VOS MISMO&rdquo;</span>
+              <span className="text-[#A4D902]">&ldquo;ESTÁ GENIAL SER VOS MISMO&rdquo;</span>
             </h2>
 
             <p className="text-sm sm:text-base text-emerald-100/80 leading-relaxed font-medium">
@@ -75,7 +75,7 @@ export const FidoDidoSection: React.FC<FidoDidoSectionProps> = ({ onNavigate }) 
 
             {/* Interactive Rules Selector */}
             <div className="w-full mt-2">
-              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#FFE600] block mb-3">
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#A4D902] block mb-3">
                 Hacé clic en los mandamientos de Fido:
               </span>
 
@@ -90,7 +90,7 @@ export const FidoDidoSection: React.FC<FidoDidoSectionProps> = ({ onNavigate }) 
                       onClick={() => handleRuleClick(idx)}
                       className={`p-2.5 rounded-xl border text-xs font-black transition-all cursor-pointer text-center ${
                         isSelected
-                          ? 'bg-[#7ED957] text-[#05421A] border-[#7ED957] shadow-lg scale-105'
+                          ? 'bg-[#A4D902] text-[#01592A] border-[#A4D902] shadow-lg scale-105'
                           : 'bg-white/5 border-white/10 text-white/70 hover:bg-white/10 hover:text-white'
                       }`}
                     >
@@ -103,7 +103,7 @@ export const FidoDidoSection: React.FC<FidoDidoSectionProps> = ({ onNavigate }) 
 
               {/* Active Rule Card */}
               <div className="p-5 rounded-2xl bg-black/40 border border-emerald-500/30 backdrop-blur-md">
-                <div className="flex items-center gap-2 mb-1 text-[#FFE600]">
+                <div className="flex items-center gap-2 mb-1 text-[#A4D902]">
                   <Quote className="w-4 h-4" />
                   <span className="text-xs font-mono font-bold uppercase">
                     Regla {activeRule + 1}: {FIDO_PHILOSOPHY[activeRule].title}
@@ -121,7 +121,7 @@ export const FidoDidoSection: React.FC<FidoDidoSectionProps> = ({ onNavigate }) 
                 type="button"
                 id="fido-cta-arcade"
                 onClick={handlePlayArcade}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#7ED957] hover:bg-[#6ecb47] text-[#05421A] font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#A4D902] hover:bg-[#A4D902] text-[#01592A] font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg hover:scale-105 active:scale-95 transition-all cursor-pointer"
               >
                 <Gamepad2 className="w-4 h-4" />
                 <span>Ver Trailer &amp; Descargar</span>
@@ -144,9 +144,9 @@ export const FidoDidoSection: React.FC<FidoDidoSectionProps> = ({ onNavigate }) 
 
           {/* Right Column (5 cols): Visual Character Showcase */}
           <div className="lg:col-span-5 flex flex-col items-center justify-center">
-            <div className="relative p-6 sm:p-8 rounded-3xl bg-white shadow-2xl border-4 border-[#05421A] flex flex-col items-center max-w-xs w-full rotate-1 hover:rotate-0 transition-transform duration-500 group">
+            <div className="relative p-6 sm:p-8 rounded-3xl bg-white shadow-2xl border-4 border-[#01592A] flex flex-col items-center max-w-xs w-full rotate-1 hover:rotate-0 transition-transform duration-500 group">
               {/* Comic Strip Tape Detail */}
-              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-sm bg-[#FFE600] text-black font-mono text-[10px] font-black tracking-widest uppercase border border-black/20 rotate-[-1deg]">
+              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-sm bg-[#A4D902] text-black font-mono text-[10px] font-black tracking-widest uppercase border border-black/20 rotate-[-1deg]">
                 ORIGINAL SKETCH • 7UP
               </div>
 
@@ -157,17 +157,17 @@ export const FidoDidoSection: React.FC<FidoDidoSectionProps> = ({ onNavigate }) 
 
               {/* Speech bubble */}
               <div className="mt-3 p-3 rounded-2xl bg-emerald-50 border border-emerald-200 text-center w-full">
-                <span className="text-[11px] font-mono uppercase tracking-wider text-[#008B3E] font-bold block">
+                <span className="text-[11px] font-mono uppercase tracking-wider text-[#01592A] font-bold block">
                   FILOSOFÍA CÍTIRCA
                 </span>
-                <p className="text-xs font-bold text-[#05421A] mt-0.5">
+                <p className="text-xs font-bold text-[#01592A] mt-0.5">
                   &ldquo;La vida es muy corta para tomar bebidas aburridas.&rdquo;
                 </p>
               </div>
 
-              <div className="mt-3 flex items-center justify-between w-full px-2 text-[10px] font-bold text-[#05421A]/60">
+              <div className="mt-3 flex items-center justify-between w-full px-2 text-[10px] font-bold text-[#01592A]/60">
                 <span>© 7UP x Joanna Ferrone</span>
-                <span className="text-[#E51E2B] font-black">100% COOL</span>
+                <span className="text-[#F2081B] font-black">100% COOL</span>
               </div>
             </div>
           </div>

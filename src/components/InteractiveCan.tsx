@@ -82,8 +82,8 @@ export const InteractiveCan: React.FC<InteractiveCanProps> = ({
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
           className="absolute -left-2 sm:-left-6 lg:-left-10 top-16 z-20 hidden sm:flex flex-col gap-1 p-3 bg-white/95 dark:bg-[#0C2413]/95 backdrop-blur-md rounded-2xl shadow-xl border border-emerald-100 dark:border-emerald-700/50 max-w-[150px]"
         >
-          <div className="flex items-center gap-1.5 text-emerald-700 dark:text-[#50E528] font-extrabold text-xs sm:text-sm">
-            <Sparkles className="w-4 h-4 text-[#25C44B]" />
+          <div className="flex items-center gap-1.5 text-emerald-700 dark:text-[#A4D902] font-extrabold text-xs sm:text-sm">
+            <Sparkles className="w-4 h-4 text-[#029F3D]" />
             <span>100% Cítrico</span>
           </div>
           <p className="text-[11px] text-emerald-950/70 dark:text-emerald-200/80 font-medium leading-tight">
@@ -97,7 +97,7 @@ export const InteractiveCan: React.FC<InteractiveCanProps> = ({
           transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
           className="absolute -right-2 sm:-right-6 lg:-right-10 bottom-24 z-20 hidden sm:flex flex-col gap-1 p-3 bg-white/95 dark:bg-[#0C2413]/95 backdrop-blur-md rounded-2xl shadow-xl border border-emerald-100 dark:border-emerald-700/50 max-w-[155px]"
         >
-          <div className="flex items-center gap-1.5 text-emerald-700 dark:text-[#50E528] font-extrabold text-xs sm:text-sm">
+          <div className="flex items-center gap-1.5 text-emerald-700 dark:text-[#A4D902] font-extrabold text-xs sm:text-sm">
             <span className="inline-block w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse" />
             <span>Sonido Real</span>
           </div>
@@ -174,7 +174,7 @@ export const InteractiveCan: React.FC<InteractiveCanProps> = ({
                   {currentVariety.badge}
                 </div>
                 <div className="text-7xl font-black italic tracking-tighter">
-                  7<span className="text-[#E51E2B] not-italic">.</span>
+                  7<span className="text-[#F2081B] not-italic">.</span>
                 </div>
                 <div className="w-full text-center text-sm font-extrabold uppercase">
                   {currentVariety.name}
@@ -223,7 +223,7 @@ export const InteractiveCan: React.FC<InteractiveCanProps> = ({
                   e.stopPropagation();
                   handleOpenCan();
                 }}
-                className="group/btn relative inline-flex items-center gap-2.5 px-8 py-3 rounded-full font-black text-sm sm:text-base text-white bg-[#E51E2B] hover:bg-[#D01522] shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95"
+                className="group/btn relative inline-flex items-center gap-2.5 px-8 py-3 rounded-full font-black text-sm sm:text-base text-white bg-[#F2081B] hover:bg-[#F2081B] shadow-md hover:shadow-lg transition-all hover:scale-105 active:scale-95"
               >
                 <span>¡APRETÁ LA LATA!</span>
                 <span className="w-2.5 h-2.5 rounded-full bg-white animate-ping" />
@@ -256,10 +256,10 @@ export const InteractiveCan: React.FC<InteractiveCanProps> = ({
                       ? vId === 'cherry'
                         ? 'bg-[#B30B2D] text-white shadow-md scale-102'
                         : vId === 'zero'
-                        ? 'bg-[#05451D] text-[#B8F24C] shadow-md scale-102'
+                        ? 'bg-[#01592A] text-[#A4D902] shadow-md scale-102'
                         : vId === 'tropical'
-                        ? 'bg-[#008C99] text-[#FFB81C] shadow-md scale-102'
-                        : 'bg-[#008B3E] text-white shadow-md scale-102'
+                        ? 'bg-[#008C99] text-[#A4D902] shadow-md scale-102'
+                        : 'bg-[#01592A] text-white shadow-md scale-102'
                       : 'text-emerald-900/70 dark:text-emerald-200/70 hover:text-emerald-950 dark:hover:text-white hover:bg-emerald-50/80 dark:hover:bg-emerald-900/40'
                   }`}
                 >

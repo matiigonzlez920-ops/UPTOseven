@@ -82,12 +82,12 @@ export const CommercialSpotHero: React.FC<CommercialSpotHeroProps> = () => {
           onClick={toggleSound}
           aria-label={isMuted ? 'Activar audio' : 'Silenciar audio'}
           title={isMuted ? 'Activar audio' : 'Silenciar audio'}
-          className="w-10 h-10 sm:w-11 sm:h-11 rounded-full flex items-center justify-center bg-black/65 hover:bg-black/85 backdrop-blur-md border border-white/20 hover:border-[#7ED957]/60 text-white transition-all shadow-xl hover:scale-110 active:scale-95 cursor-pointer"
+          className="w-10 h-10 sm:w-11 sm:h-11 rounded-full flex items-center justify-center bg-black/65 hover:bg-black/85 backdrop-blur-md border border-white/20 hover:border-[#A4D902]/60 text-white transition-all shadow-xl hover:scale-110 active:scale-95 cursor-pointer"
         >
           {isMuted ? (
             <VolumeX className="w-5 h-5 text-white/75" />
           ) : (
-            <Volume2 className="w-5 h-5 text-[#7ED957] animate-pulse" />
+            <Volume2 className="w-5 h-5 text-[#A4D902] animate-pulse" />
           )}
         </button>
       </div>

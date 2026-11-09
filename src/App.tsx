@@ -65,7 +65,7 @@ export default function App() {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen flex flex-col bg-[#F6FAF6] dark:bg-[#061208] text-[#0A2912] dark:text-[#E4F2E7] font-sans antialiased selection:bg-[#25C44B] selection:text-white transition-colors duration-300">
+      <div className="min-h-screen flex flex-col bg-[#F1F6D5] dark:bg-[#061208] text-[#01592A] dark:text-[#F1F6D5] font-sans antialiased selection:bg-[#A4D902] selection:text-[#01592A] transition-colors duration-300">
         {/* Sticky Global Header */}
         <Header currentPage={currentPage} onNavigate={handleNavigate} />
 

@@ -87,21 +87,21 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
   const totalRotateY = baseRotateY + mouseTilt.y;
 
   return (
-    <div className="w-full relative overflow-hidden rounded-3xl bg-linear-to-br from-[#002f12] via-[#00421a] to-[#011a09] border-3 border-[#7ED957]/50 shadow-2xl p-5 sm:p-8 lg:p-10 text-white">
+    <div className="w-full relative overflow-hidden rounded-3xl bg-linear-to-br from-[#01592A] via-[#01592A] to-[#011a09] border-3 border-[#A4D902]/50 shadow-2xl p-5 sm:p-8 lg:p-10 text-white">
       {/* Ambient background glow & bubbles */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#FFE600]/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-10 w-96 h-96 bg-[#7ED957]/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -top-10 -left-10 w-60 h-60 bg-[#008B3E]/30 rounded-full blur-2xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#A4D902]/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-10 w-96 h-96 bg-[#A4D902]/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-10 -left-10 w-60 h-60 bg-[#01592A]/30 rounded-full blur-2xl pointer-events-none" />
 
       {/* Top Banner Tag */}
       <div className="relative z-10 flex flex-wrap items-center justify-between gap-3 mb-6 pb-5 border-b border-white/15">
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#E51E2B] text-white text-[11px] font-black uppercase tracking-widest shadow-md animate-pulse">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#F2081B] text-white text-[11px] font-black uppercase tracking-widest shadow-md animate-pulse">
             <Flame className="w-3.5 h-3.5 fill-current" />
             DROP EXCLUSIVO EN LA CALLE
           </span>
-          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md text-[#FFE600] text-[11px] font-mono font-black uppercase">
-            <MapPin className="w-3 h-3 text-[#7ED957]" />
+          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md text-[#A4D902] text-[11px] font-mono font-black uppercase">
+            <MapPin className="w-3 h-3 text-[#A4D902]" />
             5 DISPENSERS • ROSARIO
           </span>
         </div>
@@ -117,7 +117,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-black/40 hover:bg-black/60 border border-white/20 text-xs font-mono font-bold text-white transition-all cursor-pointer"
             title="Cambiar perspectiva del mockup 3D"
           >
-            <Box className="w-3.5 h-3.5 text-[#FFE600]" />
+            <Box className="w-3.5 h-3.5 text-[#A4D902]" />
             <span>{view3D === 'isometric' ? 'Vista Isométrica 3D' : 'Vista Frontal 3D'}</span>
           </button>
 
@@ -129,7 +129,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
             }}
             className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-xl border text-xs font-mono font-bold transition-all cursor-pointer ${
               neonActive
-                ? 'bg-[#7ED957]/20 border-[#7ED957] text-[#7ED957] shadow-[0_0_12px_rgba(126,217,87,0.4)]'
+                ? 'bg-[#A4D902]/20 border-[#A4D902] text-[#A4D902] shadow-[0_0_12px_rgba(126,217,87,0.4)]'
                 : 'bg-black/40 border-white/20 text-neutral-400'
             }`}
             title="Encender/apagar luces neón"
@@ -144,14 +144,14 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         {/* Left Side: Editorial Typography & Value Proposition */}
         <div className="lg:col-span-6 flex flex-col text-left">
-          <div className="inline-flex items-center gap-2 text-xs font-mono font-black tracking-widest text-[#7ED957] uppercase mb-2">
-            <Sparkles className="w-4 h-4 text-[#FFE600]" />
+          <div className="inline-flex items-center gap-2 text-xs font-mono font-black tracking-widest text-[#A4D902] uppercase mb-2">
+            <Sparkles className="w-4 h-4 text-[#A4D902]" />
             CÁPSULA OFICIAL 7UP STREETWEAR 2026
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight uppercase leading-[0.95] text-white">
             ROPA DE 7UP <br />
-            <span className="text-[#FFE600]">EN DISPENSER</span> <br />
+            <span className="text-[#A4D902]">EN DISPENSER</span> <br />
             DE GASEOSA
           </h1>
 
@@ -162,19 +162,19 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
           {/* Quick interactive feature badges */}
           <div className="grid grid-cols-3 gap-2 sm:gap-3 my-6">
             <div className="p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 flex flex-col">
-              <span className="text-[10px] font-mono text-[#7ED957] font-bold uppercase">Formato</span>
+              <span className="text-[10px] font-mono text-[#A4D902] font-bold uppercase">Formato</span>
               <span className="text-xs sm:text-sm font-black text-white mt-0.5">Cápsula Fría</span>
               <span className="text-[10px] text-emerald-200/80 mt-0.5">Tubo cilíndrico sellado</span>
             </div>
 
             <div className="p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 flex flex-col">
-              <span className="text-[10px] font-mono text-[#FFE600] font-bold uppercase">Prendas</span>
+              <span className="text-[10px] font-mono text-[#A4D902] font-bold uppercase">Prendas</span>
               <span className="text-xs sm:text-sm font-black text-white mt-0.5">Hoodies & Tees</span>
               <span className="text-[10px] text-emerald-200/80 mt-0.5">Algodón pesado 100%</span>
             </div>
 
             <div className="p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 flex flex-col">
-              <span className="text-[10px] font-mono text-[#7ED957] font-bold uppercase">Ubicación</span>
+              <span className="text-[10px] font-mono text-[#A4D902] font-bold uppercase">Ubicación</span>
               <span className="text-xs sm:text-sm font-black text-white mt-0.5">Rosario (SF)</span>
               <span className="text-[10px] text-emerald-200/80 mt-0.5">5 Máquinas activas</span>
             </div>
@@ -186,7 +186,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
               type="button"
               id="hero-try-simulator-btn"
               onClick={handleSimulateVend}
-              className="px-6 py-3.5 rounded-2xl bg-[#FFE600] hover:bg-yellow-300 text-[#00471C] font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl transition-all hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
+              className="px-6 py-3.5 rounded-2xl bg-[#A4D902] hover:bg-yellow-300 text-[#01592A] font-black text-xs sm:text-sm uppercase tracking-wider shadow-xl transition-all hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
             >
               <Package className="w-4 h-4" />
               <span>Simular Dispensado</span>
@@ -199,7 +199,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
               onClick={handleExploreMap}
               className="px-5 py-3.5 rounded-2xl bg-white/15 hover:bg-white/25 text-white font-black text-xs sm:text-sm uppercase tracking-wider border border-white/30 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
             >
-              <MapPin className="w-4 h-4 text-[#7ED957]" />
+              <MapPin className="w-4 h-4 text-[#A4D902]" />
               <span>Ver Mapa en Rosario</span>
             </button>
           </div>
@@ -232,7 +232,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
             {/* 3D Extruded Right Side Wall (Creates physical machine depth) */}
             {view3D === 'isometric' && (
               <div
-                className="absolute top-0 right-0 w-24 h-full bg-linear-to-b from-[#003816] via-[#01220c] to-[#001407] rounded-r-3xl border-y-4 border-r-4 border-[#01471b] shadow-2xl overflow-hidden flex flex-col justify-between py-8 px-2 z-0 pointer-events-none"
+                className="absolute top-0 right-0 w-24 h-full bg-linear-to-b from-[#01592A] via-[#01220c] to-[#001407] rounded-r-3xl border-y-4 border-r-4 border-[#01592A] shadow-2xl overflow-hidden flex flex-col justify-between py-8 px-2 z-0 pointer-events-none"
                 style={{
                   transformOrigin: 'right center',
                   transform: 'rotateY(90deg) translateZ(-2px)',
@@ -240,10 +240,10 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
               >
                 {/* 3D Side Brand Typography */}
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-[#E51E2B] text-white font-black text-2xl flex items-center justify-center border-2 border-white shadow-lg mb-2">
+                  <div className="w-12 h-12 rounded-full bg-[#F2081B] text-white font-black text-2xl flex items-center justify-center border-2 border-white shadow-lg mb-2">
                     7
                   </div>
-                  <span className="text-[12px] font-black tracking-widest text-[#7ED957] uppercase [writing-mode:vertical-rl] rotate-180">
+                  <span className="text-[12px] font-black tracking-widest text-[#A4D902] uppercase [writing-mode:vertical-rl] rotate-180">
                     7UP VENDING TECH
                   </span>
                 </div>
@@ -265,8 +265,8 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
 
             {/* FRONT CABINET (7UP Emerald Green Metallic Shell) */}
             <div
-              className={`w-[320px] sm:w-[390px] bg-linear-to-b from-[#02441c] via-[#012d12] to-[#001909] rounded-3xl p-4 sm:p-5 border-4 ${
-                neonActive ? 'border-[#7ED957]' : 'border-[#008B3E]'
+              className={`w-[320px] sm:w-[390px] bg-linear-to-b from-[#01592A] via-[#012d12] to-[#001909] rounded-3xl p-4 sm:p-5 border-4 ${
+                neonActive ? 'border-[#A4D902]' : 'border-[#01592A]'
               } shadow-[0_25px_60px_rgba(0,0,0,0.85)] relative overflow-hidden transition-all duration-300`}
             >
               {/* Top Chrome Bevel Highlight */}
@@ -276,8 +276,8 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
               <div
                 className={`rounded-2xl p-3 border-2 shadow-lg flex items-center justify-between relative overflow-hidden mb-3.5 transition-all duration-300 ${
                   neonActive
-                    ? 'bg-linear-to-r from-[#008B3E] via-[#00A84B] to-[#008B3E] border-[#FFE600] shadow-[0_0_25px_rgba(126,217,87,0.5)]'
-                    : 'bg-linear-to-r from-[#005726] via-[#006f31] to-[#005726] border-white/30'
+                    ? 'bg-linear-to-r from-[#01592A] via-[#029F3D] to-[#01592A] border-[#A4D902] shadow-[0_0_25px_rgba(126,217,87,0.5)]'
+                    : 'bg-linear-to-r from-[#01592A] via-[#01592A] to-[#01592A] border-white/30'
                 }`}
               >
                 {/* Glossy light streak */}
@@ -285,14 +285,14 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
 
                 <div className="flex items-center gap-2.5 z-10">
                   {/* 3D 7UP Badge */}
-                  <div className="w-10 h-10 rounded-full bg-[#E51E2B] text-white font-black text-xl flex items-center justify-center border-2 border-white shadow-xl ring-2 ring-red-400/40">
+                  <div className="w-10 h-10 rounded-full bg-[#F2081B] text-white font-black text-xl flex items-center justify-center border-2 border-white shadow-xl ring-2 ring-red-400/40">
                     7
                   </div>
                   <div>
                     <div className="text-sm sm:text-base font-black tracking-wider text-white leading-none uppercase drop-shadow-md">
                       7UP DISPENSER
                     </div>
-                    <div className="text-[10px] font-mono font-black text-[#FFE600] tracking-widest uppercase mt-0.5">
+                    <div className="text-[10px] font-mono font-black text-[#A4D902] tracking-widest uppercase mt-0.5">
                       CÁPSULAS STREETWEAR
                     </div>
                   </div>
@@ -301,8 +301,8 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                 {/* Status Indicator */}
                 <div className="bg-black/55 px-2.5 py-1 rounded-xl border border-white/20 text-right z-10">
                   <span className="text-[8px] font-mono text-emerald-300 block uppercase font-bold">TEMPERATURA</span>
-                  <span className="text-[11px] font-mono font-black text-[#7ED957] flex items-center gap-1 justify-end">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#7ED957] animate-ping" />
+                  <span className="text-[11px] font-mono font-black text-[#A4D902] flex items-center gap-1 justify-end">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#A4D902] animate-ping" />
                     4°C READY
                   </span>
                 </div>
@@ -316,11 +316,11 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
 
                 {/* Shelf Rack Header & Tag */}
                 <div className="flex items-center justify-between mb-2 z-30 relative">
-                  <span className="px-2 py-0.5 rounded-md bg-black/80 backdrop-blur-md border border-white/20 text-[9px] font-mono font-bold text-[#7ED957] flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#7ED957] animate-ping" />
+                  <span className="px-2 py-0.5 rounded-md bg-black/80 backdrop-blur-md border border-white/20 text-[9px] font-mono font-bold text-[#A4D902] flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#A4D902] animate-ping" />
                     VITRINA CÁPSULAS 7UP
                   </span>
-                  <span className="text-[9px] font-black uppercase text-[#FFE600] bg-black/80 px-2 py-0.5 rounded-md border border-white/20">
+                  <span className="text-[9px] font-black uppercase text-[#A4D902] bg-black/80 px-2 py-0.5 rounded-md border border-white/20">
                     SELECCIONÁ UN SLOT
                   </span>
                 </div>
@@ -337,7 +337,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                         onClick={() => handleSelectSlot(idx)}
                         className={`relative rounded-2xl p-2.5 border-2 transition-all cursor-pointer flex flex-col items-center justify-between text-center overflow-hidden ${
                           isSelected
-                            ? 'bg-[#008B3E]/45 border-[#FFE600] ring-2 ring-[#FFE600]/60 shadow-[0_0_20px_rgba(255,230,0,0.35)] scale-[1.03]'
+                            ? 'bg-[#01592A]/45 border-[#A4D902] ring-2 ring-[#A4D902]/60 shadow-[0_0_20px_rgba(255,230,0,0.35)] scale-[1.03]'
                             : 'bg-white/5 border-white/20 hover:border-white/50 hover:bg-white/10'
                         }`}
                       >
@@ -349,13 +349,13 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                           <span
                             className={`px-1.5 py-0.5 rounded-md ${
                               isSelected
-                                ? 'bg-[#FFE600] text-[#00471C] font-extrabold shadow-xs'
+                                ? 'bg-[#A4D902] text-[#01592A] font-extrabold shadow-xs'
                                 : 'bg-white/20 text-white'
                             }`}
                           >
                             {slotCodes[idx]}
                           </span>
-                          <span className="text-[#7ED957] text-[9px] font-bold">
+                          <span className="text-[#A4D902] text-[9px] font-bold">
                             {item.badge}
                           </span>
                         </div>
@@ -368,7 +368,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
 
                           {/* Top & Bottom Capsule Metal Caps */}
                           <div className="absolute top-0 inset-x-0 h-2 bg-linear-to-r from-neutral-400 via-white to-neutral-500 rounded-t-xl z-10" />
-                          <div className="absolute bottom-0 inset-x-0 h-2.5 bg-linear-to-r from-[#006828] via-[#7ED957] to-[#00471C] rounded-b-xl z-10 flex items-center justify-center">
+                          <div className="absolute bottom-0 inset-x-0 h-2.5 bg-linear-to-r from-[#01592A] via-[#A4D902] to-[#01592A] rounded-b-xl z-10 flex items-center justify-center">
                             <span className="text-[7px] font-black text-black leading-none">7UP</span>
                           </div>
 
@@ -380,7 +380,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                           />
 
                           {/* 7UP Brand Seal on the glass */}
-                          <div className="absolute bottom-3 right-1 w-5 h-5 rounded-full bg-[#E51E2B] text-white text-[10px] font-black flex items-center justify-center border-2 border-white shadow-md z-10">
+                          <div className="absolute bottom-3 right-1 w-5 h-5 rounded-full bg-[#F2081B] text-white text-[10px] font-black flex items-center justify-center border-2 border-white shadow-md z-10">
                             7
                           </div>
                         </div>
@@ -399,7 +399,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                         <div
                           className={`w-full mt-1.5 py-1 rounded-lg text-[9px] font-black uppercase tracking-wider transition-colors ${
                             isSelected
-                              ? 'bg-[#FFE600] text-[#00471C] shadow-md'
+                              ? 'bg-[#A4D902] text-[#01592A] shadow-md'
                               : 'bg-white/10 text-neutral-300'
                           }`}
                         >
@@ -419,7 +419,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                     <div className="text-[8px] text-emerald-400 uppercase tracking-wider leading-none">
                       DISPLAY DISPENSER
                     </div>
-                    <div className="text-xs sm:text-sm font-black text-[#FFE600] tracking-widest animate-pulse leading-tight">
+                    <div className="text-xs sm:text-sm font-black text-[#A4D902] tracking-widest animate-pulse leading-tight">
                       [SLOT {activeItemIndex + 1}] • {activeItem.name.slice(0, 14)}
                     </div>
                   </div>
@@ -430,7 +430,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                   <button
                     type="button"
                     onClick={handleTriggerVend}
-                    className="px-3 py-2 rounded-xl bg-linear-to-b from-[#FFE600] to-[#d4b900] text-[#00471C] font-black text-[11px] uppercase tracking-wider shadow-md hover:brightness-110 active:scale-95 transition-all cursor-pointer flex items-center gap-1"
+                    className="px-3 py-2 rounded-xl bg-linear-to-b from-[#A4D902] to-[#A4D902] text-[#01592A] font-black text-[11px] uppercase tracking-wider shadow-md hover:brightness-110 active:scale-95 transition-all cursor-pointer flex items-center gap-1"
                     title="Apretar botón para dispensar cápsula"
                   >
                     <Package className="w-3.5 h-3.5" />
@@ -445,7 +445,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                   <span className="text-[9px] font-mono font-black text-neutral-400 uppercase tracking-widest">
                     COMPUERTA DE RETIRO • EMPUJAR
                   </span>
-                  <span className="text-[9px] font-mono font-black text-[#7ED957]">
+                  <span className="text-[9px] font-mono font-black text-[#A4D902]">
                     SALIDA CÁPSULA FRÍA
                   </span>
                 </div>
@@ -455,8 +455,8 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                   onClick={handleTriggerVend}
                   className={`relative h-20 sm:h-22 bg-neutral-950 rounded-xl border-2 transition-all p-3 flex items-center justify-between cursor-pointer group overflow-hidden ${
                     dispenseAnim
-                      ? 'border-[#FFE600] ring-4 ring-[#FFE600]/40 scale-[0.98]'
-                      : 'border-neutral-700 hover:border-[#7ED957]'
+                      ? 'border-[#A4D902] ring-4 ring-[#A4D902]/40 scale-[0.98]'
+                      : 'border-neutral-700 hover:border-[#A4D902]'
                   }`}
                 >
                   {/* Caution Stripes Flap Frame */}
@@ -468,7 +468,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                   {/* Dispensed Item Visual */}
                   <div className="flex items-center gap-3 z-10">
                     <div
-                      className={`relative w-14 h-14 rounded-2xl bg-linear-to-b from-white/30 to-[#008B3E]/40 border-2 border-white shadow-xl flex items-center justify-center overflow-hidden shrink-0 transition-transform ${
+                      className={`relative w-14 h-14 rounded-2xl bg-linear-to-b from-white/30 to-[#01592A]/40 border-2 border-white shadow-xl flex items-center justify-center overflow-hidden shrink-0 transition-transform ${
                         dispenseAnim ? 'scale-125 rotate-6' : 'group-hover:scale-105'
                       }`}
                     >
@@ -478,16 +478,16 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-emerald-900/20" />
-                      <span className="absolute bottom-1 px-1.5 py-0.2 rounded-full bg-[#E51E2B] text-white text-[8px] font-black">
+                      <span className="absolute bottom-1 px-1.5 py-0.2 rounded-full bg-[#F2081B] text-white text-[8px] font-black">
                         7UP
                       </span>
                     </div>
 
                     <div className="text-left">
-                      <div className="text-xs font-black text-white group-hover:text-[#FFE600] transition-colors flex items-center gap-1.5">
+                      <div className="text-xs font-black text-white group-hover:text-[#A4D902] transition-colors flex items-center gap-1.5">
                         <span>{activeItem.name}</span>
                         {dispenseAnim && (
-                          <span className="text-[10px] font-mono text-[#7ED957] font-bold">
+                          <span className="text-[10px] font-mono text-[#A4D902] font-bold">
                             ¡DISPENSADO!
                           </span>
                         )}
@@ -498,7 +498,7 @@ export const CapsulaHeroDispenser: React.FC<CapsulaHeroDispenserProps> = ({
                     </div>
                   </div>
 
-                  <div className="z-10 px-3 py-1.5 rounded-xl bg-white/10 group-hover:bg-[#FFE600] text-white group-hover:text-[#00471C] text-[10px] font-black uppercase transition-colors shrink-0 shadow-md flex items-center gap-1">
+                  <div className="z-10 px-3 py-1.5 rounded-xl bg-white/10 group-hover:bg-[#A4D902] text-white group-hover:text-[#01592A] text-[10px] font-black uppercase transition-colors shrink-0 shadow-md flex items-center gap-1">
                     <span>{dispenseAnim ? 'LISTO' : 'RETIRE'}</span>
                     <ArrowRight className="w-3 h-3" />
                   </div>

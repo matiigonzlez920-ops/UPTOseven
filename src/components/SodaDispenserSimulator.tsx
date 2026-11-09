@@ -57,15 +57,15 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
 
   return (
     <div className="w-full max-w-5xl mx-auto my-8 select-none">
-      <div className="bg-linear-to-b from-[#005724] via-[#007A35] to-[#004A1F] rounded-3xl p-6 sm:p-10 border-4 border-[#7ED957]/60 shadow-2xl text-white relative overflow-hidden">
+      <div className="bg-linear-to-b from-[#01592A] via-[#01592A] to-[#01592A] rounded-3xl p-6 sm:p-10 border-4 border-[#A4D902]/60 shadow-2xl text-white relative overflow-hidden">
         {/* Subtle background ambient bubbles */}
-        <div className="absolute top-0 right-10 w-96 h-96 bg-[#FFE600]/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-10 w-80 h-80 bg-[#7ED957]/15 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute top-0 right-10 w-96 h-96 bg-[#A4D902]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-10 w-80 h-80 bg-[#A4D902]/15 rounded-full blur-2xl pointer-events-none" />
 
         {/* Top Header info */}
         <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 border-b border-white/20">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFE600] text-[#00471C] font-black text-xs uppercase tracking-wider mb-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#A4D902] text-[#01592A] font-black text-xs uppercase tracking-wider mb-2">
               <Sparkles className="w-3.5 h-3.5 fill-current" />
               DISPENSER DE GASEOSA 7UP • VENDING DE CÁPSULAS
             </div>
@@ -79,7 +79,7 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
 
           {/* Current Spot Indicator */}
           <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/25">
-            <div className="w-3 h-3 rounded-full bg-[#7ED957] animate-ping" />
+            <div className="w-3 h-3 rounded-full bg-[#A4D902] animate-ping" />
             <div className="text-left text-xs">
               <div className="text-emerald-200 uppercase font-bold text-[10px]">Dispenser seleccionado</div>
               <div className="font-extrabold text-white">{selectedSpot.name}</div>
@@ -94,16 +94,16 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
             {/* The Vending Machine Cabinet */}
             <div className="w-full max-w-xs sm:max-w-sm bg-[#053b16] rounded-3xl p-5 border-4 border-[#002b0f] shadow-2xl relative flex flex-col">
               {/* Machine Top Brand Header */}
-              <div className="bg-[#008B3E] rounded-2xl p-3 border-2 border-[#7ED957]/80 text-center shadow-md relative overflow-hidden mb-4">
+              <div className="bg-[#01592A] rounded-2xl p-3 border-2 border-[#A4D902]/80 text-center shadow-md relative overflow-hidden mb-4">
                 <div className="flex items-center justify-center gap-2">
-                  <div className="w-7 h-7 rounded-full bg-[#E51E2B] text-white font-black text-sm flex items-center justify-center border border-white shadow-xs">
+                  <div className="w-7 h-7 rounded-full bg-[#F2081B] text-white font-black text-sm flex items-center justify-center border border-white shadow-xs">
                     7
                   </div>
                   <span className="font-black text-lg tracking-widest text-white uppercase">
                     7UP CAPSULE VENDOR
                   </span>
                 </div>
-                <div className="text-[10px] text-[#FFE600] font-mono tracking-widest mt-0.5">
+                <div className="text-[10px] text-[#A4D902] font-mono tracking-widest mt-0.5">
                   ROSARIO STREET EDITION • MODEL 1982
                 </div>
               </div>
@@ -131,9 +131,9 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
                       className="relative flex flex-col items-center justify-center p-2 rounded-xl bg-white/10 border border-white/25 shadow-md backdrop-blur-xs group"
                     >
                       {/* Capsule Shape Visual */}
-                      <div className="w-12 h-14 rounded-full border-2 border-[#7ED957] bg-linear-to-b from-white/30 via-emerald-400/20 to-[#008B3E]/60 flex items-center justify-center shadow-lg relative overflow-hidden">
+                      <div className="w-12 h-14 rounded-full border-2 border-[#A4D902] bg-linear-to-b from-white/30 via-emerald-400/20 to-[#01592A]/60 flex items-center justify-center shadow-lg relative overflow-hidden">
                         <div className="absolute top-1 left-2 w-3 h-2 bg-white/60 rounded-full blur-[1px]" />
-                        <span className="text-[9px] font-black text-[#FFE600] uppercase tracking-tighter">
+                        <span className="text-[9px] font-black text-[#A4D902] uppercase tracking-tighter">
                           {idx % 2 === 0 ? 'ROPA' : 'MERCH'}
                         </span>
                       </div>
@@ -143,8 +143,8 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
                 </div>
 
                 {/* Digital LED Display Banner */}
-                <div className="bg-black/90 rounded-lg py-1.5 px-3 border border-[#7ED957]/50 text-center font-mono text-xs">
-                  <span className={isVending ? 'text-[#FFE600] animate-pulse' : 'text-[#7ED957]'}>
+                <div className="bg-black/90 rounded-lg py-1.5 px-3 border border-[#A4D902]/50 text-center font-mono text-xs">
+                  <span className={isVending ? 'text-[#A4D902] animate-pulse' : 'text-[#A4D902]'}>
                     {isVending
                       ? '>>> DISPENSANDO CÁPSULA... <<<'
                       : dispensedItem
@@ -165,7 +165,7 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
                   className={`flex-1 py-3.5 px-4 rounded-2xl font-black text-sm uppercase tracking-wider transition-all duration-200 flex items-center justify-center gap-2 shadow-lg border-2 ${
                     isVending
                       ? 'bg-neutral-600 text-neutral-300 border-neutral-500 cursor-not-allowed'
-                      : 'bg-linear-to-b from-[#FFE600] to-[#E5C300] text-[#00471C] border-white hover:brightness-105 active:scale-95 shadow-[#FFE600]/40'
+                      : 'bg-linear-to-b from-[#A4D902] to-[#A4D902] text-[#01592A] border-white hover:brightness-105 active:scale-95 shadow-[#A4D902]/40'
                   }`}
                 >
                   <RefreshCw className={`w-4 h-4 ${isVending ? 'animate-spin' : ''}`} />
@@ -190,19 +190,19 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
                   }}
                   className={`h-16 rounded-xl border-2 border-dashed flex items-center justify-center transition-all ${
                     dispensedItem && !isCapsuleOpen
-                      ? 'bg-[#008B3E]/40 border-[#7ED957] cursor-pointer hover:bg-[#008B3E]/60 animate-pulse'
+                      ? 'bg-[#01592A]/40 border-[#A4D902] cursor-pointer hover:bg-[#01592A]/60 animate-pulse'
                       : 'bg-black/40 border-neutral-700 text-neutral-500'
                   }`}
                 >
                   {dispensedItem ? (
                     <div className="flex items-center gap-3">
                       {/* Bouncing Capsule inside flap */}
-                      <div className="w-10 h-10 rounded-full border-2 border-[#7ED957] bg-linear-to-r from-[#FFE600] to-[#7ED957] shadow-lg flex items-center justify-center animate-bounce">
-                        <Package className="w-5 h-5 text-[#00471C]" />
+                      <div className="w-10 h-10 rounded-full border-2 border-[#A4D902] bg-linear-to-r from-[#A4D902] to-[#A4D902] shadow-lg flex items-center justify-center animate-bounce">
+                        <Package className="w-5 h-5 text-[#01592A]" />
                       </div>
                       <div className="text-left">
                         <div className="text-xs font-black text-white">¡CÁPSULA EN BANDEJA!</div>
-                        <div className="text-[10px] text-[#FFE600] underline font-bold">
+                        <div className="text-[10px] text-[#A4D902] underline font-bold">
                           {isCapsuleOpen ? 'Cápsula revelada a la derecha' : 'Hacé clic para destaparla'}
                         </div>
                       </div>
@@ -228,14 +228,14 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
                 {/* Rarity & Category Pill */}
                 <div className="flex items-center justify-between gap-2 mb-3">
                   <div className="flex items-center gap-2">
-                    <span className="px-3 py-1 rounded-full bg-[#FFE600] text-[#00471C] font-black text-xs uppercase tracking-wider">
+                    <span className="px-3 py-1 rounded-full bg-[#A4D902] text-[#01592A] font-black text-xs uppercase tracking-wider">
                       {dispensedItem.category}
                     </span>
                     <span className="px-2.5 py-0.5 rounded-full bg-white/20 text-white font-mono text-xs font-bold">
                       {dispensedItem.rarity}
                     </span>
                   </div>
-                  <span className="text-xs font-mono text-[#7ED957] font-bold">
+                  <span className="text-xs font-mono text-[#A4D902] font-bold">
                     {dispensedItem.badge}
                   </span>
                 </div>
@@ -260,7 +260,7 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
                     <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">
                       {dispensedItem.name}
                     </h3>
-                    <p className="text-xs font-bold text-[#FFE600]">
+                    <p className="text-xs font-bold text-[#A4D902]">
                       {dispensedItem.tagline}
                     </p>
                     <p className="text-xs text-emerald-100/90 leading-relaxed mt-1">
@@ -284,7 +284,7 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
                               }}
                               className={`px-3 py-1 rounded-lg text-xs font-extrabold transition-all ${
                                 selectedSize === s
-                                  ? 'bg-[#7ED957] text-[#00471C] shadow-xs'
+                                  ? 'bg-[#A4D902] text-[#01592A] shadow-xs'
                                   : 'bg-white/15 text-white hover:bg-white/25'
                               }`}
                             >
@@ -298,9 +298,9 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
                 </div>
 
                 {/* Pickup Ticket Bar */}
-                <div className="mt-5 p-3.5 rounded-2xl bg-[#004217] border border-[#7ED957]/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div className="mt-5 p-3.5 rounded-2xl bg-[#004217] border border-[#A4D902]/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                   <div className="flex items-center gap-2.5">
-                    <MapPin className="w-4 h-4 text-[#FFE600] shrink-0" />
+                    <MapPin className="w-4 h-4 text-[#A4D902] shrink-0" />
                     <div className="text-xs">
                       <span className="text-emerald-300 font-semibold block text-[10px]">
                         Retiro en Rosario, Santa Fe:
@@ -333,7 +333,7 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
               </motion.div>
             ) : (
               <div className="bg-white/5 border-2 border-dashed border-white/20 rounded-3xl p-8 sm:p-12 text-center flex flex-col items-center justify-center">
-                <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-4 text-[#FFE600]">
+                <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-4 text-[#A4D902]">
                   <Package className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-black text-white uppercase tracking-tight">
@@ -342,7 +342,7 @@ export const SodaDispenserSimulator: React.FC<SodaDispenserSimulatorProps> = ({
                 <p className="text-sm text-emerald-100/80 max-w-md mt-2 leading-relaxed">
                   Presioná el botón <strong>«PULSAR DISPENSER»</strong> en la máquina para activar el mecanismo de gaseosa y recibir una cápsula al azar de la colección 7UP Streetwear & Merch.
                 </p>
-                <div className="mt-6 flex items-center gap-2 text-xs font-mono text-[#7ED957] bg-black/30 px-3.5 py-1.5 rounded-full border border-white/10">
+                <div className="mt-6 flex items-center gap-2 text-xs font-mono text-[#A4D902] bg-black/30 px-3.5 py-1.5 rounded-full border border-white/10">
                   <span>DISPENSERS ACTIVOS EN 5 PUNTOS DE ROSARIO</span>
                 </div>
               </div>

@@ -93,7 +93,7 @@ export const STORY_CHAPTERS: StoryChapter[] = [
       author: 'Crónica The Seven-Up Company, 1936',
     },
     badge: 'EL BAUTISMO',
-    accentColor: '#50E528',
+    accentColor: '#A4D902',
     ambientBg: 'from-[#072412] via-[#0b331a] to-[#05180c]',
     artifactTitle: 'Nacimiento de la Botella Verde',
     artifactDesc: 'Silueta de vidrio esmeralda con escudo 7 y 7 orbes cítricos en órbita gravitacional.',
@@ -121,7 +121,7 @@ export const STORY_CHAPTERS: StoryChapter[] = [
       author: 'Lema Nacional Oficial 1936–1948',
     },
     badge: 'ERA DORADA',
-    accentColor: '#7ED957',
+    accentColor: '#A4D902',
     ambientBg: 'from-[#0a2817] via-[#05381a] to-[#041d0e]',
     artifactTitle: 'Botella Verde 8-Bubbles',
     artifactDesc: 'Vidrio esmeralda con relieve táctil de 8 burbujas y chapa corona dorada.',
@@ -149,7 +149,7 @@ export const STORY_CHAPTERS: StoryChapter[] = [
       author: 'Advertising Age, Retrospectiva Visual',
     },
     badge: 'MODERNIDAD',
-    accentColor: '#FF3B30',
+    accentColor: '#F2081B',
     ambientBg: 'from-[#182618] via-[#0d3b1b] to-[#1a0f0f]',
     artifactTitle: 'Lata Pop Art 60s & The Spot',
     artifactDesc: 'Cilindro metálico de aluminio vintage con The Red Spot 3D pulsando en su corazón.',
@@ -177,7 +177,7 @@ export const STORY_CHAPTERS: StoryChapter[] = [
       author: 'Manifiesto de Fido Dido, 1990',
     },
     badge: 'CULTURA POP',
-    accentColor: '#A6FF00',
+    accentColor: '#A4D902',
     ambientBg: 'from-[#072412] via-[#0d381c] to-[#04170a]',
     artifactTitle: 'Cool Spot 3D & Fido Canvas',
     artifactDesc: 'Esfera escarlata con gafas oscuras de sol y panel flotante con boceto a tinta de Fido Dido.',
@@ -205,7 +205,7 @@ export const STORY_CHAPTERS: StoryChapter[] = [
       author: 'Geoffrey Holder, 1968',
     },
     badge: 'REVOLUCIÓN',
-    accentColor: '#FFCC00',
+    accentColor: '#A4D902',
     ambientBg: 'from-[#172605] via-[#0f3616] to-[#041c0d]',
     artifactTitle: 'El Vaso Invertido Uncola 3D',
     artifactDesc: 'Cáliz de cristal invertido con burbujas suspendidas, rodaja tridimensional y anillos psicodélicos.',
@@ -233,8 +233,8 @@ export const STORY_CHAPTERS: StoryChapter[] = [
       author: 'Filosofía Global 7UP, 2026',
     },
     badge: 'ACTUALIDAD 2026',
-    accentColor: '#25C44B',
-    ambientBg: 'from-[#032e15] via-[#05421a] to-[#021a0c]',
+    accentColor: '#029F3D',
+    ambientBg: 'from-[#032e15] via-[#01592A] to-[#021a0c]',
     artifactTitle: 'Lata Clásica 7UP 3D Oficial (GLB)',
     artifactDesc: 'Modelo 3D interactivo real con texturas metálicas, iluminación de estudio y rotación 360° en tiempo real.',
   },
@@ -336,12 +336,12 @@ export const Scrollytelling3DHistory: React.FC<Scrollytelling3DHistoryProps> = (
     <div
       ref={containerRef}
       id="story-scrolly-container"
-      className="relative w-full bg-[#05180C] text-white font-sans selection:bg-[#25C44B] selection:text-white"
+      className="relative w-full bg-[#05180C] text-white font-sans selection:bg-[#029F3D] selection:text-white"
     >
       {/* Top Scrollytelling Brand Bar */}
       <div className="sticky top-16 z-30 w-full px-4 sm:px-8 py-3 bg-[#05180C]/85 backdrop-blur-md border-b border-emerald-800/40 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full bg-[#E51E2B] flex items-center justify-center font-black text-white text-xs shadow-md">
+          <div className="w-8 h-8 rounded-full bg-[#F2081B] flex items-center justify-center font-black text-white text-xs shadow-md">
             7UP
           </div>
           <div>
@@ -349,7 +349,7 @@ export const Scrollytelling3DHistory: React.FC<Scrollytelling3DHistoryProps> = (
               <span className="text-xs sm:text-sm font-black tracking-wider uppercase text-white">
                 7UP — THE STORY
               </span>
-              <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/30 text-[10px] font-mono font-bold text-[#7ED957]">
+              <span className="hidden sm:inline-block px-2 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/30 text-[10px] font-mono font-bold text-[#A4D902]">
                 THREE.JS • GSAP SCROLLTRIGGER
               </span>
             </div>
@@ -367,7 +367,7 @@ export const Scrollytelling3DHistory: React.FC<Scrollytelling3DHistoryProps> = (
             aria-label={isMuted ? 'Activar sonido' : 'Silenciar'}
             className="p-2 rounded-full bg-emerald-900/60 hover:bg-emerald-800/80 text-emerald-200 border border-emerald-700/50 transition-colors"
           >
-            {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4 text-[#7ED957]" />}
+            {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4 text-[#A4D902]" />}
           </button>
 
           {/* Prev / Next controls */}
@@ -416,7 +416,7 @@ export const Scrollytelling3DHistory: React.FC<Scrollytelling3DHistoryProps> = (
             {/* Floating 3D Artifact Metadata Overlay */}
             <div className="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
               <div className="px-3 py-1.5 rounded-xl bg-black/60 backdrop-blur-md border border-white/10 text-white shadow-lg">
-                <span className="text-[10px] font-mono tracking-widest text-[#7ED957] font-bold block uppercase">
+                <span className="text-[10px] font-mono tracking-widest text-[#A4D902] font-bold block uppercase">
                   OBJETO 3D DEL CAPÍTULO {currentChapter.number}
                 </span>
                 <span className="text-xs font-bold text-white block truncate">
@@ -440,7 +440,7 @@ export const Scrollytelling3DHistory: React.FC<Scrollytelling3DHistoryProps> = (
           {/* Quick instructions under canvas */}
           <div className="mt-3 flex items-center justify-between w-full px-2 text-[11px] font-mono text-emerald-400/70">
             <span className="flex items-center gap-1.5">
-              <Rotate3d className="w-3.5 h-3.5 text-[#50E528]" />
+              <Rotate3d className="w-3.5 h-3.5 text-[#A4D902]" />
               Podés girar e inclinar el modelo con el cursor o el dedo.
             </span>
             <span className="hidden sm:inline-block">Scrollytelling fluido</span>
@@ -553,7 +553,7 @@ export const Scrollytelling3DHistory: React.FC<Scrollytelling3DHistoryProps> = (
                   <button
                     type="button"
                     onClick={() => jumpToChapter(idx)}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#7ED957] hover:text-white transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-[#A4D902] hover:text-white transition-colors"
                   >
                     <span>Ver objeto en 3D</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -577,7 +577,7 @@ export const Scrollytelling3DHistory: React.FC<Scrollytelling3DHistoryProps> = (
                 onClick={() => jumpToChapter(idx)}
                 className={`px-3 py-1.5 rounded-full text-[11px] font-mono font-black tracking-tight transition-all duration-200 whitespace-nowrap flex items-center gap-1.5 ${
                   isAct
-                    ? 'bg-[#50E528] text-[#05210f] shadow-md scale-105'
+                    ? 'bg-[#A4D902] text-[#05210f] shadow-md scale-105'
                     : 'text-emerald-300/80 hover:text-white hover:bg-emerald-900/50'
                 }`}
               >

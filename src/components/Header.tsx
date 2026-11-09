@@ -47,8 +47,8 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
       id="global-header"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'py-2.5 sm:py-3 bg-[#007A35]/95 dark:bg-[#031508]/95 backdrop-blur-md shadow-lg border-b border-emerald-500/30 dark:border-emerald-500/20'
-          : 'py-3.5 sm:py-4 bg-[#008B3E] dark:bg-[#04190A]/95 shadow-md border-b border-emerald-600/40 dark:border-emerald-600/25'
+          ? 'py-2.5 sm:py-3 bg-[#01592A]/95 dark:bg-[#031508]/95 backdrop-blur-md shadow-lg border-b border-emerald-500/30 dark:border-emerald-500/20'
+          : 'py-3.5 sm:py-4 bg-[#01592A] dark:bg-[#04190A]/95 shadow-md border-b border-emerald-600/40 dark:border-emerald-600/25'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,7 +72,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
           {/* Desktop Navigation Links (Capsule Dock) */}
           <nav
             id="desktop-nav"
-            className="hidden md:flex items-center gap-1.5 p-1.5 bg-[#005724]/70 dark:bg-[#02220C]/85 backdrop-blur-md rounded-full border border-white/20 dark:border-emerald-500/20 shadow-inner"
+            className="hidden md:flex items-center gap-1.5 p-1.5 bg-[#01592A]/70 dark:bg-[#02220C]/85 backdrop-blur-md rounded-full border border-white/20 dark:border-emerald-500/20 shadow-inner"
           >
             {navItems.map((item) => {
               const isActive = currentPage === item.id;
@@ -84,7 +84,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
                   onClick={() => handleNavClick(item.id)}
                   className={`relative px-5 py-2 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all duration-200 flex items-center gap-1.5 ${
                     isActive
-                      ? 'bg-white dark:bg-[#008B3E] text-[#007A35] dark:text-white shadow-sm'
+                      ? 'bg-white dark:bg-[#01592A] text-[#01592A] dark:text-white shadow-sm'
                       : 'text-white/90 hover:text-white hover:bg-white/15 dark:hover:bg-white/10'
                   }`}
                 >
@@ -93,8 +93,8 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
                     <span
                       className={`text-[9px] px-1.5 py-0.5 rounded-full font-black ${
                         isActive
-                          ? 'bg-[#E51E2B] text-white'
-                          : 'bg-[#50E528] text-[#00471c]'
+                          ? 'bg-[#F2081B] text-white'
+                          : 'bg-[#A4D902] text-[#01592A]'
                       }`}
                     >
                       {item.badge}
@@ -117,9 +117,9 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
               className="p-2.5 rounded-full bg-white/15 hover:bg-white/25 dark:bg-emerald-950/60 dark:hover:bg-emerald-900/80 text-white border border-white/25 dark:border-emerald-500/30 shadow-xs hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center justify-center"
             >
               {isDark ? (
-                <Moon className="w-4 h-4 text-[#FFE600] fill-[#FFE600]/30" />
+                <Moon className="w-4 h-4 text-[#A4D902] fill-[#A4D902]/30" />
               ) : (
-                <Sun className="w-4 h-4 text-[#FFE600]" />
+                <Sun className="w-4 h-4 text-[#A4D902]" />
               )}
             </button>
 
@@ -135,7 +135,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
               {isMuted ? (
                 <VolumeX className="w-4 h-4 text-rose-300" />
               ) : (
-                <Volume2 className="w-4 h-4 text-[#50E528]" />
+                <Volume2 className="w-4 h-4 text-[#A4D902]" />
               )}
             </button>
 
@@ -143,7 +143,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
               type="button"
               id="header-cta-button"
               onClick={() => handleNavClick('historia')}
-              className="hidden lg:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#E51E2B] hover:bg-[#D01522] text-white text-xs font-black tracking-wide shadow-md hover:shadow-lg transition-all hover:scale-102 active:scale-95"
+              className="hidden lg:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#F2081B] hover:bg-[#F2081B] text-white text-xs font-black tracking-wide shadow-md hover:shadow-lg transition-all hover:scale-102 active:scale-95"
             >
               <Sparkles className="w-3.5 h-3.5" />
               <span>LA ÉPOCA</span>
@@ -171,7 +171,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
       {mobileMenuOpen && (
         <div
           id="mobile-menu-drawer"
-          className="md:hidden mt-2 mx-4 p-4 bg-[#005724] dark:bg-[#031A0B] text-white rounded-3xl border border-emerald-500/40 dark:border-emerald-500/30 shadow-2xl flex flex-col gap-2 animate-in fade-in slide-in-from-top-3 duration-200"
+          className="md:hidden mt-2 mx-4 p-4 bg-[#01592A] dark:bg-[#031A0B] text-white rounded-3xl border border-emerald-500/40 dark:border-emerald-500/30 shadow-2xl flex flex-col gap-2 animate-in fade-in slide-in-from-top-3 duration-200"
         >
           {navItems.map((item) => {
             const isActive = currentPage === item.id;
@@ -183,7 +183,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
                 onClick={() => handleNavClick(item.id)}
                 className={`w-full py-3 px-4 rounded-2xl text-sm font-extrabold flex items-center justify-between text-left transition-all ${
                   isActive
-                    ? 'bg-white dark:bg-[#008B3E] text-[#007A35] dark:text-white shadow-sm'
+                    ? 'bg-white dark:bg-[#01592A] text-[#01592A] dark:text-white shadow-sm'
                     : 'text-white/90 hover:bg-white/15 dark:hover:bg-white/10'
                 }`}
               >
@@ -192,8 +192,8 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
                   <span
                     className={`text-xs px-2 py-0.5 rounded-full font-bold ${
                       isActive
-                        ? 'bg-[#E51E2B] text-white'
-                        : 'bg-[#50E528] text-[#00471c]'
+                        ? 'bg-[#F2081B] text-white'
+                        : 'bg-[#A4D902] text-[#01592A]'
                     }`}
                   >
                     {item.badge}
@@ -212,7 +212,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
               onClick={toggleSound}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-white/20 text-white"
             >
-              {isMuted ? <VolumeX className="w-3.5 h-3.5 text-rose-300" /> : <Volume2 className="w-3.5 h-3.5 text-[#50E528]" />}
+              {isMuted ? <VolumeX className="w-3.5 h-3.5 text-rose-300" /> : <Volume2 className="w-3.5 h-3.5 text-[#A4D902]" />}
               <span>{isMuted ? 'Silenciado' : 'Activado'}</span>
             </button>
           </div>

@@ -6,5 +6,5 @@ interface HistoryProps { onNavigate: (page: PageId) => void; }
 export const History: React.FC<HistoryProps> = () => {
   useEffect(() => { const previous = document.body.style.overflow; document.body.style.overflow = 'hidden'; return () => { document.body.style.overflow = previous; }; }, []);
   const content = useMemo(() => historyDocument.replace('</head>', '<style>header{display:none!important}</style></head>'), []);
-  return <div style={{position:'fixed',top:80,left:0,right:0,bottom:0,zIndex:40,background:'#034b32'}}><iframe title="La Época — Historia de 7UP" srcDoc={content} style={{width:'100%',height:'100%',border:0,display:'block'}} /></div>;
+  return <div style={{position:'fixed',top:80,left:0,right:0,bottom:0,zIndex:40,background:'#01592A'}}><iframe title="La Época — Historia de 7UP" srcDoc={content} style={{width:'100%',height:'100%',border:0,display:'block'}} /></div>;
 };

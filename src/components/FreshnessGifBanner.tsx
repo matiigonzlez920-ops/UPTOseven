@@ -27,10 +27,10 @@ export const FreshnessGifBanner: React.FC<FreshnessGifBannerProps> = ({ classNam
       className={`relative w-full my-8 sm:my-12 overflow-hidden select-none ${className}`}
     >
       {/* Top decorative pixel/dash border */}
-      <div className="w-full h-1 bg-repeating-linear from-[#7ED957] via-[#FFE600] to-[#7ED957] opacity-80" />
+      <div className="w-full h-1 bg-repeating-linear from-[#A4D902] via-[#A4D902] to-[#A4D902] opacity-80" />
 
       {/* Main Marquee Banner Strip - Fondo Verde */}
-      <div className="relative py-3 sm:py-4 bg-[#008B3E] dark:bg-[#00602B] border-y-2 border-[#7ED957]/50 dark:border-[#7ED957]/30 shadow-lg overflow-hidden flex items-center">
+      <div className="relative py-3 sm:py-4 bg-[#01592A] dark:bg-[#01592A] border-y-2 border-[#A4D902]/50 dark:border-[#A4D902]/30 shadow-lg overflow-hidden flex items-center">
         {/* Subtle ambient light gradient */}
         <div className="absolute inset-0 bg-linear-to-r from-black/20 via-transparent to-black/20 pointer-events-none" />
 
@@ -49,22 +49,22 @@ export const FreshnessGifBanner: React.FC<FreshnessGifBannerProps> = ({ classNam
             <div key={idx} className="flex items-center gap-3 sm:gap-4 shrink-0">
               {/* Icon / Badge */}
               {item.icon === 'badge' ? (
-                <span className="w-6 h-6 rounded-full bg-[#E51E2B] text-white font-black text-xs flex items-center justify-center shadow-md border border-white/40">
+                <span className="w-6 h-6 rounded-full bg-[#F2081B] text-white font-black text-xs flex items-center justify-center shadow-md border border-white/40">
                   7
                 </span>
               ) : item.icon === 'citrus' ? (
-                <span className="w-2.5 h-2.5 rounded-full bg-[#FFE600] shadow-[0_0_8px_#FFE600]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#A4D902] shadow-[0_0_8px_#A4D902]" />
               ) : item.icon === 'zap' ? (
-                <Zap className="w-4 h-4 text-[#FFE600] fill-current" />
+                <Zap className="w-4 h-4 text-[#A4D902] fill-current" />
               ) : (
-                <Sparkles className="w-4 h-4 text-[#7ED957] fill-current" />
+                <Sparkles className="w-4 h-4 text-[#A4D902] fill-current" />
               )}
 
               {/* Text */}
               <span
                 className={`text-sm sm:text-base md:text-lg font-black tracking-wider uppercase ${
                   item.highlight
-                    ? 'text-[#FFE600] drop-shadow-sm'
+                    ? 'text-[#A4D902] drop-shadow-sm'
                     : 'text-white drop-shadow-xs'
                 }`}
               >
@@ -72,7 +72,7 @@ export const FreshnessGifBanner: React.FC<FreshnessGifBannerProps> = ({ classNam
               </span>
 
               {/* Separator Bullet / Star */}
-              <span className="text-[#7ED957]/60 font-bold text-base select-none">
+              <span className="text-[#A4D902]/60 font-bold text-base select-none">
                 ✦
               </span>
             </div>
@@ -81,7 +81,7 @@ export const FreshnessGifBanner: React.FC<FreshnessGifBannerProps> = ({ classNam
       </div>
 
       {/* Bottom decorative pixel/dash border */}
-      <div className="w-full h-1 bg-repeating-linear from-[#7ED957] via-[#FFE600] to-[#7ED957] opacity-80" />
+      <div className="w-full h-1 bg-repeating-linear from-[#A4D902] via-[#A4D902] to-[#A4D902] opacity-80" />
     </div>
   );
 };
