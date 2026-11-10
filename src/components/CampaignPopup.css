@@ -9,3 +9,11 @@
 @media(prefers-reduced-motion:reduce){.campaign-dialog,.campaign-dialog *{animation:none!important;transition:none!important}.campaign-dialog .campaign-product,.campaign-dialog .campaign-cta,.campaign-dialog .campaign-lemons{transform:none!important}}
 
 #capsula-merch-showcase{scroll-margin-top:100px}
+
+/* Align the visible can bases, independent of each PNG's transparent margins. */
+.campaign-lego .campaign-can-frame{width:auto;bottom:0;object-fit:initial;transform-origin:center bottom;transform:translate(calc(var(--mx) * var(--depth) * 1px),calc(var(--my) * 4px))}
+.campaign-can-frame img{position:absolute;display:block;max-width:none;pointer-events:none;user-select:none}
+.campaign-lego .campaign-can1,.campaign-lego .campaign-can5{height:76%}
+.campaign-lego .campaign-can2,.campaign-lego .campaign-can4{height:90%}
+.campaign-lego .campaign-can3{height:100%}
+.campaign-lego .campaign-can-frame:hover{transform:translate(calc(var(--mx) * var(--depth) * 1px),calc(var(--my) * 4px - 14px)) rotate(-3deg) scale(1.045)}

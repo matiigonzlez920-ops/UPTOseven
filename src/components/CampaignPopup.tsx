@@ -19,6 +19,15 @@ const products = {
   ],
 };
 
+// Visible alpha bounds within each original PNG. Normalize layout, never alter the artwork.
+const canFrames: Record<string, { width: number; height: number; bounds: [number, number, number, number] }> = {
+  can1: { width: 494, height: 1085, bounds: [48, 115, 455, 993] },
+  can2: { width: 536, height: 1088, bounds: [48, 80, 472, 958] },
+  can3: { width: 482, height: 967, bounds: [21, 24, 448, 902] },
+  can4: { width: 480, height: 1210, bounds: [37, 79, 441, 958] },
+  can5: { width: 586, height: 1092, bounds: [127, 144, 529, 1023] },
+};
+
 export function CampaignPopup({ campaign }: { campaign: Campaign }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const reducedMotion = useReducedMotion();
@@ -82,7 +91,22 @@ export function CampaignPopup({ campaign }: { campaign: Campaign }) {
         {isLego && <div className="campaign-ribbon" aria-label="Edición limitada"><div className="campaign-ribbon-track" aria-hidden="true">{[0, 1].map(index => <span key={index}>{'EDICIÓN LIMITADA · '.repeat(6)}</span>)}</div></div>}
         <div className="campaign-content">
           <div className="campaign-art" aria-label={isLego ? 'Latas vintage de la colección' : 'Prendas de la colección cápsula'}>
-            {products[campaign].map(([position, image, description]) => <img key={image} className={`campaign-product campaign-${position}`} src={asset(image)} alt={description} draggable={false} />)}
+            {products[campaign].map(([position, image, description]) => {
+              if (!isLego) return <img key={image} className={`campaign-product campaign-${position}`} src={asset(image)} alt={description} draggable={false} />;
+              const { width, height, bounds: [left, top, right, bottom] } = canFrames[position];
+              const visibleWidth = right - left;
+              const visibleHeight = bottom - top;
+              return (
+                <span key={image} className={`campaign-product campaign-can-frame campaign-${position}`} style={{ aspectRatio: `${visibleWidth} / ${visibleHeight}` }}>
+                  <img src={asset(image)} alt={description} draggable={false} style={{
+                    width: `${width / visibleWidth * 100}%`,
+                    height: `${height / visibleHeight * 100}%`,
+                    left: `${-left / visibleWidth * 100}%`,
+                    top: `${-top / visibleHeight * 100}%`,
+                  }} />
+                </span>
+              );
+            })}
           </div>
           <div className="campaign-copy">
             <div className="campaign-brands">
