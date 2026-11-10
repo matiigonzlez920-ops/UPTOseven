@@ -9,6 +9,7 @@ import { Game } from './pages/Game';
 import { Contact } from './pages/Contact';
 import { FidoDidoCompanion } from './components/FidoDidoCompanion';
 import { ThemeProvider } from './context/ThemeContext';
+import { CampaignPopup } from './components/CampaignPopup';
 
 // Helper to determine PageId from URL path
 function getPageFromPath(path: string): PageId {
@@ -83,6 +84,9 @@ export default function App() {
 
         {/* Global Footer */}
         <Footer onNavigate={handleNavigate} />
+        {(currentPage === 'historia' || currentPage === 'productos') && (
+          <CampaignPopup key={currentPage} campaign={currentPage === 'historia' ? 'lego' : 'festival'} />
+        )}
       </div>
     </ThemeProvider>
   );
